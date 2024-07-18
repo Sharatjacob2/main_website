@@ -1,0 +1,36 @@
+.containerTitles{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 140px;
+    align-items: center;
+}
+
+.backTitle{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.centreImage{
+    position: absolute;
+    z-index: 2;
+    width: 600px;
+    height: 600px;
+    top: -175px;
+    right: 100px;
+}
+
+.frontTitle{
+    position: absolute;
+    z-index: 3;
+}
+
+.tempDiv{
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+    height: 100px;
+    background-color: #FA9595;
+    top: 350px;
+}

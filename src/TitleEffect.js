@@ -11,7 +11,6 @@ function TitleEffect({title}) {
         <Sharat className='centreImage'/>
         <div className='tempDiv'></div>
         <Welcome className='frontTitle'/>
-        
         </div>
     );
 }

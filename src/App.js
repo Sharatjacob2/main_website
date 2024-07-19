@@ -8,6 +8,9 @@ import Weird from './weirdPage/Weird';
 import Blog from './blogPage/Blog';
 
 function App() {
+
+  console.log('Viewport width:', window.innerWidth);
+  
   return (
     <BrowserRouter>
       <Routes>

@@ -9,7 +9,7 @@ import { ReactComponent as ResumeImage } from './iconsLandingPage/ResumeImage.sv
 import { ReactComponent as WriteImage } from './iconsLandingPage/WriterImage.svg';
 
 import NavSelect from './NavSelect';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const WelcomePage = () => {
     const selectors = [
@@ -25,15 +25,35 @@ const WelcomePage = () => {
         setColorValue(colorValue);
     }
 
+    const firstElementRef = useRef(null);
+    const [topPosition, setTopPosition] = useState(0);
+
+    const positionSecondElement = () => {
+        if (firstElementRef.current) {
+            const firstElementRect = firstElementRef.current.getBoundingClientRect();
+            setTopPosition(firstElementRect.bottom + 85);
+        }
+    };
+
+    useEffect(() => {
+        positionSecondElement();
+        // Reposition on window resize
+        window.addEventListener('resize', positionSecondElement);
+        // Cleanup event listener
+        return () => {
+            window.removeEventListener('resize', positionSecondElement);
+        };
+    }, []);
+
     return (
         <div className="welcome-page">
-            <h1 className='subTitle'>THE SQUARE GIVES YOU A HEARTY</h1>
+            <h1 ref={firstElementRef} className='subTitle'>THE SQUARE GIVES YOU A HEARTY</h1>
             <div className='containerTitles'>
                 <WelcomeBack className='backTitle' />
                 <NavSelect selectors={selectors} onSelectorChange={handleSelectorChange} />
                 <Welcome className='frontTitle' />
             </div>
-            <div className={`main-sphere ${colorValue === 'white' ? '' : 'clicked'}`} style={{ backgroundColor: colorValue }}></div>
+            <div className={`main-sphere ${colorValue === 'white' ? '' : 'clicked'}`} style={{ backgroundColor: colorValue, top:`${topPosition}px`  }}></div>
         </div>
     );
 }

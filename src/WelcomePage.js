@@ -2,7 +2,7 @@ import './WelcomePage.css';
 import { ReactComponent as Welcome } from './WELCOME.svg';
 import { ReactComponent as WelcomeBack } from './WELCOME back.svg';
 
-import { ReactComponent as AboutImage } from './iconsLandingPage/about nav.svg';
+import { ReactComponent as AboutImage } from './iconsLandingPage/AboutImage.svg';
 import { ReactComponent as ProjectImage } from './iconsLandingPage/ProjectImage.svg';
 import { ReactComponent as WeirdImage } from './iconsLandingPage/WeirdImage.svg';
 import { ReactComponent as ResumeImage } from './iconsLandingPage/ResumeImage.svg';
@@ -13,11 +13,11 @@ import { useState } from 'react';
 
 const WelcomePage = () => {
     const selectors = [
-        { title: "projects", color: '#E3E1E1', svgName: ProjectImage, id: 1 },
-        { title: "resume", color: '#FA9595', svgName: ResumeImage, id: 2 },
-        { title: "about", color: '#221818', svgName: AboutImage, id: 3 },
-        { title: "weird", color: '#E02727', svgName: WeirdImage, id: 4 },
-        { title: "blog", color: '#DAABFA', svgName: WriteImage, id: 5 }
+        { title: "projects", color: '#D7263D', svgName: ProjectImage, id: 1 },
+        { title: "resume", color: '#F46036', svgName: ResumeImage, id: 2 },
+        { title: "about", color: '#2E294E', svgName: AboutImage, id: 3 },
+        { title: "weird", color: '#1B998B', svgName: WeirdImage, id: 4 },
+        { title: "blog", color: '#C5D86D', svgName: WriteImage, id: 5 }
     ];
 
     const [colorValue, setColorValue] = useState('white');

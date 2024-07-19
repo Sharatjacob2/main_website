@@ -1,9 +1,12 @@
 body {
   margin: 0;
-  background-color: #FFD7D7;
+  background-color: #cac4f2;
 }
 
 #root{
+  width: 100%;
+  position: absolute;
+  text-align: center;
   width: 100%;
 }
 

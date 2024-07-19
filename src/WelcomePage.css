@@ -13,25 +13,16 @@
     z-index: 1;
 }
 
-.centreImage{
+.nav-selectors{
     position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: inherit;
     z-index: 2;
-    width: 600px;
-    height: 600px;
-    top: -175px;
-    right: 100px;
 }
 
 .frontTitle{
     position: absolute;
     z-index: 3;
-}
-
-.tempDiv{
-    position: absolute;
-    width: 100%;
-    z-index: 4;
-    height: 100px;
-    background-color: #FA9595;
-    top: 350px;
 }

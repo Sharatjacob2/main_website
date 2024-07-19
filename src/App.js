@@ -1,12 +1,12 @@
 import './App.css';
-import TitleEffect from './TitleEffect';
+import WelcomePage from './WelcomePage';
 
 
 function App() {
   return (
     <div className="App">
       <div className='content'>
-        < TitleEffect title="WELCOME" />
+        < WelcomePage/>
       </div>
     </div>
   );

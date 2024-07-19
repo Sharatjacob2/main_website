@@ -1,0 +1,24 @@
+.nav-select{
+    display: inline-block;
+    position: relative;
+    top: -60px;
+    width: 200px;
+    height: 500px;
+}
+
+.sphere{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+.rectangle{
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+}
+

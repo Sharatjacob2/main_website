@@ -2,9 +2,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    top: 140px;
+    top: 80px;
     align-items: center;
-    width: 100%;
+    width: 99.7vw;
+    height: 79.6vh;
+    overflow: hidden;
 }
 
 .backTitle{
@@ -15,7 +17,7 @@
 
 .nav-selectors{
     position: absolute;
-    top: 170px;
+    top: 210px;
     left: 50%;
     transform: translateX(-50%);
     width: inherit;
@@ -25,4 +27,10 @@
 .frontTitle{
     position: absolute;
     z-index: 3;
+}
+
+.subTitle{
+    font-weight: 300;
+    top:65px;
+    position: relative;
 }

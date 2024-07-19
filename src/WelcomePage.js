@@ -13,10 +13,14 @@ const WelcomePage = () => {
     ];
 
     return (
-        <div className='containerTitles'>
+        <div className="welcome-page">
+            <h1 className='subTitle'>THE SQUARE GIVES YOU A HEARTY</h1>
+            <div className='containerTitles'>
             <WelcomeBack className='backTitle' />
             <NavSelect selectors = {selectors}/>
             <Welcome className='frontTitle' />
+        </div>
+
         </div>
     );
 }

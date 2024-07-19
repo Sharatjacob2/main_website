@@ -11,14 +11,32 @@
     width: 200px;
     height: 200px;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 .rectangle{
     width: 200px;
     height: 400px;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     top: 100px;
 }
 
+.small-sphere{
+    border-radius: 100%;
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    z-index: 1;
+    background-color: aliceblue;
+    left: 50%;
+    transform: translate(-50%,30%);
+    overflow: hidden;
+}
+
+.nav-icon{
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    transform: translateY(35%);
+}

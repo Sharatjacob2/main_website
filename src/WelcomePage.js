@@ -2,11 +2,11 @@ import './WelcomePage.css';
 import { ReactComponent as Welcome } from './WELCOME.svg';
 import { ReactComponent as WelcomeBack } from './WELCOME back.svg';
 
-import { ReactComponent as AboutImage } from './about nav.svg';
-import { ReactComponent as ProjectImage } from './ProjectImage.svg';
-import { ReactComponent as WeirdImage } from './WeirdImage.svg';
-import { ReactComponent as ResumeImage } from './ResumeImage.svg';
-import { ReactComponent as WriteImage } from './WriterImage.svg';
+import { ReactComponent as AboutImage } from './iconsLandingPage/about nav.svg';
+import { ReactComponent as ProjectImage } from './iconsLandingPage/ProjectImage.svg';
+import { ReactComponent as WeirdImage } from './iconsLandingPage/WeirdImage.svg';
+import { ReactComponent as ResumeImage } from './iconsLandingPage/ResumeImage.svg';
+import { ReactComponent as WriteImage } from './iconsLandingPage/WriterImage.svg';
 
 import NavSelect from './NavSelect';
 import { useState } from 'react';

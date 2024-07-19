@@ -2,7 +2,6 @@ import './NavSelect.css';
 
 const NavSelect = (props) => {
     const selectors = props.selectors; 
-    console.log(selectors);
 
     return ( 
         <div className="nav-selectors">
@@ -13,6 +12,7 @@ const NavSelect = (props) => {
                 <selector.svgName className='nav-icon'/>
                 </div>
             </div>
+            <div className="nav-title">{selector.title}</div>
             <div className="rectangle" style={{backgroundColor: selector.color}}></div>
         </div>
     ))}

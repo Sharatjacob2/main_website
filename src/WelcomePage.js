@@ -12,11 +12,11 @@ import NavSelect from './NavSelect';
 
 const WelcomePage = () => {
     const selectors = [
-        {color: '#E3E1E1', svgName: ProjectImage, id: 1},
-        {color: '#FA9595', svgName: ResumeImage, id: 2},
-        {color: '#221818', svgName: AboutImage, id: 3},
-        {color: '#E02727', svgName: WeirdImage, id: 4},
-        {color: '#DAABFA', svgName: WriteImage, id: 5}
+        {title: "projects", color: '#E3E1E1', svgName: ProjectImage, id: 1},
+        {title: "resume", color: '#FA9595', svgName: ResumeImage, id: 2},
+        {title: "about", color: '#221818', svgName: AboutImage, id: 3},
+        {title: "weird", color: '#E02727', svgName: WeirdImage, id: 4},
+        {title: "blog", color: '#DAABFA', svgName: WriteImage, id: 5}
     ];
 
     return (

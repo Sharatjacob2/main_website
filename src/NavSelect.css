@@ -17,6 +17,7 @@
     height: 200px;
     position: absolute;
     z-index: 2;
+    transition: all 0.3s ease;
 }
 
 .rectangle{
@@ -26,6 +27,7 @@
     z-index: 1;
     top: 100px;
 }
+
 
 .small-sphere{
     border-radius: 100%;
@@ -51,10 +53,11 @@
     font-weight: 300;
     color: white;
     position: absolute;
-    top: 200px;
+    top: 220px;
     z-index: 4;
     left: 50%;
     transform: translateX(-50%);
     font-size: 30px;
     
 }
+

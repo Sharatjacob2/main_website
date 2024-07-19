@@ -1,7 +1,7 @@
 import About from './About';
 import './App.css';
 import WelcomePage from './WelcomePage';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (

@@ -30,10 +30,10 @@ const WelcomePage = () => {
             <h1 className='subTitle'>THE SQUARE GIVES YOU A HEARTY</h1>
             <div className='containerTitles'>
                 <WelcomeBack className='backTitle' />
-                <NavSelect selectors={selectors} onSelectorChange = {handleSelectorChange}/>
+                <NavSelect selectors={selectors} onSelectorChange={handleSelectorChange} />
                 <Welcome className='frontTitle' />
             </div>
-            <div className={`main-sphere ${colorValue === 'white' ? '':'clicked'}`} style={{backgroundColor:colorValue}}></div>
+            <div className={`main-sphere ${colorValue === 'white' ? '' : 'clicked'}`} style={{ backgroundColor: colorValue }}></div>
         </div>
     );
 }

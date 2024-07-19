@@ -1,14 +1,22 @@
 import { useState } from 'react';
 import './NavSelect.css';
+import { useNavigate } from 'react-router-dom';
+
 
 const NavSelect = (props) => {
     const selectors = props.selectors; 
 
     const [selectorId, setSelectorId] = useState(0);
+    const navigate = useNavigate();
+
     const transitionClick = (selector) => {
         console.log(selectorId);
         setSelectorId(selector.id);
-        props.onSelectorChange(selector.color);    
+        props.onSelectorChange(selector.color);
+        setTimeout(() => {
+            navigate('/about');
+        }, 1000); // 1000ms = 1 second (match this duration with your animation duration)
+    
     }
 
     return ( 

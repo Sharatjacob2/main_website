@@ -13,6 +13,8 @@
     display: inline-block;
     position: relative;
     z-index: 1;
+    width: 85.469vw;
+    height: 15.625vw;
 }
 
 .nav-selectors{
@@ -27,6 +29,8 @@
 .frontTitle{
     position: absolute;
     z-index: 3;
+    width: 85.469vw;
+    height: 15.625vw;
 }
 
 .subTitle{
@@ -34,6 +38,7 @@
     top:5.078vw;
     position: relative;
     color: black;
+    font-size: 2.344vw;
 }
 
 .welcome-page{

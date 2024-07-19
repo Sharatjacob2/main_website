@@ -23,6 +23,7 @@ const WelcomePage = () => {
     const [colorValue, setColorValue] = useState('white');
     const handleSelectorChange = (colorValue) => {
         setColorValue(colorValue);
+        setTopPosition(0);
     }
 
     const firstElementRef = useRef(null);
@@ -31,7 +32,7 @@ const WelcomePage = () => {
     const positionSecondElement = () => {
         if (firstElementRef.current) {
             const firstElementRect = firstElementRef.current.getBoundingClientRect();
-            setTopPosition(firstElementRect.bottom + 85);
+            setTopPosition(firstElementRect.top + 70);
         }
     };
 
@@ -47,13 +48,13 @@ const WelcomePage = () => {
 
     return (
         <div className="welcome-page">
-            <h1 ref={firstElementRef} className='subTitle'>THE SQUARE GIVES YOU A HEARTY</h1>
+            <h1  className='subTitle'>THE SQUARE GIVES YOU A HEARTY</h1>
             <div className='containerTitles'>
-                <WelcomeBack className='backTitle' />
+                <WelcomeBack ref={firstElementRef} className='backTitle' />
                 <NavSelect selectors={selectors} onSelectorChange={handleSelectorChange} />
                 <Welcome className='frontTitle' />
             </div>
-            <div className={`main-sphere ${colorValue === 'white' ? '' : 'clicked'}`} style={{ backgroundColor: colorValue, top:`${topPosition}px`  }}></div>
+            <div className={`main-sphere ${colorValue === 'white' ? '' : 'clicked'}`} style={{ backgroundColor: colorValue, top:`${topPosition}px`}}></div>
         </div>
     );
 }

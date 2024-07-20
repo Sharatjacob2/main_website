@@ -45,3 +45,12 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* styles.css */
+.fade-enter {
+    opacity: 0;
+}
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+}

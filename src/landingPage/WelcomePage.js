@@ -27,12 +27,16 @@ const WelcomePage = () => {
     }
 
     const firstElementRef = useRef(null);
+    const secondElementRef = useRef(null);
+
     const [topPosition, setTopPosition] = useState(0);
 
     const positionSecondElement = () => {
         if (firstElementRef.current) {
             const firstElementRect = firstElementRef.current.getBoundingClientRect();
-            setTopPosition(firstElementRect.top + 70);
+            const diff = (firstElementRef.current.clientHeight)/2;
+            const circleDiff = (secondElementRef.current.clientHeight)/2;
+            setTopPosition(firstElementRect.top + diff- circleDiff/1.2);
         }
     };
 
@@ -54,7 +58,7 @@ const WelcomePage = () => {
                 <NavSelect selectors={selectors} onSelectorChange={handleSelectorChange} />
                 <Welcome className='Welcome-frontTitle' />
             </div>
-            <div className={`main-sphere ${colorValue === 'white' ? '' : 'clicked'}`} style={{ backgroundColor: colorValue, top:`${topPosition}px`}}></div>
+            <div ref={secondElementRef} className={`main-sphere ${colorValue === 'white' ? '' : 'clicked'}`} style={{ backgroundColor: colorValue, top:`${topPosition}px`}}></div>
         </div>
     );
 }

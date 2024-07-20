@@ -50,9 +50,9 @@ const WelcomePage = () => {
         <div className="welcome-page">
             <h1  className='subTitle'>THE SQUARE GIVES YOU A HEARTY</h1>
             <div className='containerTitles'>
-                <WelcomeBack ref={firstElementRef} className='backTitle' />
+                <WelcomeBack ref={firstElementRef} className='Welcome-backTitle' />
                 <NavSelect selectors={selectors} onSelectorChange={handleSelectorChange} />
-                <Welcome className='frontTitle' />
+                <Welcome className='Welcome-frontTitle' />
             </div>
             <div className={`main-sphere ${colorValue === 'white' ? '' : 'clicked'}`} style={{ backgroundColor: colorValue, top:`${topPosition}px`}}></div>
         </div>

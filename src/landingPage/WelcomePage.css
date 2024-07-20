@@ -9,7 +9,7 @@
     overflow: hidden;
 }
 
-.backTitle{
+.Welcome-backTitle{
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -26,7 +26,7 @@
     z-index: 2;
 }
 
-.frontTitle{
+.Welcome-frontTitle{
     position: absolute;
     z-index: 3;
     width: 85.469vw;

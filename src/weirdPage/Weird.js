@@ -5,7 +5,7 @@ import {ReactComponent as WeirdCentre} from './Weird Centre.svg';
 import './Weird.css';
 
 const Weird = () => {
-    const title = {front: WeirdF, back: WeirdB, centre: WeirdCentre, left: 180, top: -120};
+    const title = {front: WeirdF, back: WeirdB, centre: WeirdCentre, left: -3.906, top: -9.375};
 
     return (
         <div className="Weird-Page" style={{backgroundColor: '#1B998B'}}>

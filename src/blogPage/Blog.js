@@ -5,8 +5,7 @@ import {ReactComponent as BlogCentre} from './Blog Centre.svg';
 import './Blog.css';
 
 const Blog = () => {
-    const title = {front: BlogF, back: BlogB, centre: BlogCentre, color: '#C5D86D', top: -150};
-
+    const title = {front: BlogF, back: BlogB, centre: BlogCentre, color: '#C5D86D', top: -11.719, width: 46.875, height: 46.875, right: 27.344};
     return (
         <div className="Blog-Page" style={{backgroundColor: '#C5D86D'}}>
             <TitleEffect title ={title}/>

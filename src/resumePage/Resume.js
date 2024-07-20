@@ -6,7 +6,7 @@ import './Resume.css';
 
 
 const Resume = () => {
-    const title = {front: ResumeF, back: ResumeB, centre: ResumeCentre, top: -270, left: 200, width: 900, height: 900};
+    const title = {front: ResumeF, back: ResumeB, centre: ResumeCentre, top: -21.094, left: -21.875, width: 70.313, height: 70.313};
 
     return (
         <div className="Resume-Page" style={{backgroundColor: '#F46036'}}>

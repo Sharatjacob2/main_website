@@ -6,7 +6,7 @@ import './Project.css';
 
 
 const Project = () => {
-    const title = {front: ProjectF, back: ProjectB, centre: ProjectCentre, top: -180, left: 850, width: 800, height: 700};
+    const title = {front: ProjectF, back: ProjectB, centre: ProjectCentre, top: -14.063, right: 0, width: 62.5, height: 54.688};
 
     return (
         <div className="Projects-Page" style={{backgroundColor: '#D7263D'}}>

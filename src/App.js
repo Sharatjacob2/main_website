@@ -9,7 +9,7 @@ import Blog from './blogPage/Blog';
 
 function App() {
 
-  console.log('Viewport width:', window.innerWidth);
+  console.log('Viewport width:', window.innerHeight);
   
   return (
     <BrowserRouter>

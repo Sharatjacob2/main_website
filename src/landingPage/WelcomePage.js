@@ -11,22 +11,11 @@ import { ReactComponent as WriteImage } from './iconsLandingPage/WriterImage.svg
 
 import NavSelect from './NavSelect';
 import { useEffect, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const WelcomePage = () => {
     const zeroethElementRef = useRef(null);
-    // const zeroethWidth = zeroethElementRef.current.clientWidth;
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth <= 900){
-                navigate('/mobileWelcome');
-            }
-        };
-        // Add event listener for window resize
-        window.addEventListener('resize', handleResize);
-    }, [navigate]);
+    // const navigate = useNavigate();
 
     const selectors = [
         { title: "projects", color: '#D7263D', svgName: ProjectImage, id: 1 },
@@ -50,13 +39,25 @@ const WelcomePage = () => {
     const positionSecondElement = () => {
         if (firstElementRef.current) {
             const firstElementRect = firstElementRef.current.getBoundingClientRect();
-            const diff = (firstElementRef.current.clientHeight)/2;
-            const circleDiff = (secondElementRef.current.clientHeight)/2;
-            setTopPosition(firstElementRect.top + diff- circleDiff/1.2);
+            const diff = (firstElementRef.current.clientHeight) / 2;
+            const circleDiff = (secondElementRef.current.clientHeight) / 2;
+            setTopPosition(firstElementRect.top + diff - circleDiff / 1.2);
         }
     };
 
+    // if (window.innerWidth <= 900) {
+    //     navigate('/mobileWelcome');
+    // }
+
     useEffect(() => {
+        // const handleResize = () => {
+        //     if (window.innerWidth <= 900) {
+        //         navigate('/mobileWelcome');
+        //     }
+        // };
+        // // Add event listener for window resize
+        // window.addEventListener('resize', handleResize);
+
         positionSecondElement();
         // Reposition on window resize
         window.addEventListener('resize', positionSecondElement);
@@ -66,15 +67,16 @@ const WelcomePage = () => {
         };
     }, []);
 
+
     return (
         <div ref={zeroethElementRef} className="welcome-page">
-            <h1  className='subTitle'>THE SQUARE GIVES YOU A HEARTY</h1>
+            <h1 className='subTitle'>THE SQUARE GIVES YOU A HEARTY</h1>
             <div className='containerTitles'>
                 <WelcomeBack ref={firstElementRef} className='Welcome-backTitle' />
                 <NavSelect selectors={selectors} onSelectorChange={handleSelectorChange} />
                 <Welcome className='Welcome-frontTitle' />
             </div>
-            <div ref={secondElementRef} className={`main-sphere ${colorValue === 'white' ? '' : 'clicked'}`} style={{ backgroundColor: colorValue, top:`${topPosition}px`}}></div>
+            <div ref={secondElementRef} className={`main-sphere ${colorValue === 'white' ? '' : 'clicked'}`} style={{ backgroundColor: colorValue, top: `${topPosition}px` }}></div>
         </div>
     );
 }

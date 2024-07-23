@@ -1,12 +1,11 @@
 import About from './aboutPage/About';
 import './App.css';
-import WelcomePage from './landingPage/WelcomePage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Resume from './resumePage/Resume';
 import Project from './projectPage/Project';
 import Weird from './weirdPage/Weird';
 import Blog from './blogPage/Blog';
-import MobileWelcome from './mobileWelcome/mobileWelcome';
+import ResponsiveComponent from './ResponsiveTree';
 
 function App() {
 
@@ -14,8 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={< WelcomePage />} />
-        <Route path='/mobileWelcome' element={< MobileWelcome />} />
+        <Route index element={< ResponsiveComponent />} />
         <Route path='/about' element={< About />} />
         <Route path='/resume' element={< Resume />} />
         <Route path='/projects' element={< Project />} />

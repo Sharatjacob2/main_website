@@ -20,7 +20,7 @@ const WelcomePage = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth <= 800){
+            if (window.innerWidth <= 900){
                 navigate('/mobileWelcome');
             }
         };

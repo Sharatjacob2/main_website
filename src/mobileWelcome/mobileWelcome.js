@@ -2,6 +2,7 @@ import './mobileWelcome.css';
 import { ReactComponent as TwiceF } from './TWICE NAMED f.svg';
 import { ReactComponent as TwiceB } from './TWICE NAMED b.svg';
 import { ReactComponent as Centre } from './mobile Start Image.svg';
+import { NavLink } from 'react-router-dom';
 
 const MobileWelcome = () => {
 
@@ -16,9 +17,12 @@ const MobileWelcome = () => {
                 <Centre className='mobile-centreImage' />
                 <TwiceF className='mobile-frontTitle titles' />
             </div>
+            <NavLink to='/projects'>
             <div className="mobile-explore">
                 <p>explore</p>
             </div>
+
+            </NavLink>
         </div>
     );
 }

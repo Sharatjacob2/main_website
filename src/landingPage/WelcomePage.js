@@ -8,10 +8,26 @@ import { ReactComponent as WeirdImage } from './iconsLandingPage/WeirdImage.svg'
 import { ReactComponent as ResumeImage } from './iconsLandingPage/ResumeImage.svg';
 import { ReactComponent as WriteImage } from './iconsLandingPage/WriterImage.svg';
 
+
 import NavSelect from './NavSelect';
 import { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const WelcomePage = () => {
+    const zeroethElementRef = useRef(null);
+    // const zeroethWidth = zeroethElementRef.current.clientWidth;
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 800){
+                navigate('/mobileWelcome');
+            }
+        };
+        // Add event listener for window resize
+        window.addEventListener('resize', handleResize);
+    }, [navigate]);
+
     const selectors = [
         { title: "projects", color: '#D7263D', svgName: ProjectImage, id: 1 },
         { title: "resume", color: '#F46036', svgName: ResumeImage, id: 2 },
@@ -51,7 +67,7 @@ const WelcomePage = () => {
     }, []);
 
     return (
-        <div className="welcome-page">
+        <div ref={zeroethElementRef} className="welcome-page">
             <h1  className='subTitle'>THE SQUARE GIVES YOU A HEARTY</h1>
             <div className='containerTitles'>
                 <WelcomeBack ref={firstElementRef} className='Welcome-backTitle' />

@@ -22,7 +22,7 @@ const NavSelect = (props) => {
     return ( 
         <div className="nav-selectors">
         {selectors.map((selector) => (
-        <div className={`nav-select nav-select-${selector.id}`} key="selector.id" onClick={() => {transitionClick(selector)}}>
+        <div className={`nav-select nav-select-${selector.id}`} key={`${selector.id}`} onClick={() => {transitionClick(selector)}}>
             <div className="sphere" style={{backgroundColor: selector.color}}>
                 <div className="small-sphere">
                 <selector.svgName className='nav-icon'/>

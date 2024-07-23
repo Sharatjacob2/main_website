@@ -6,15 +6,16 @@ import Resume from './resumePage/Resume';
 import Project from './projectPage/Project';
 import Weird from './weirdPage/Weird';
 import Blog from './blogPage/Blog';
+import MobileWelcome from './mobileWelcome/mobileWelcome';
 
 function App() {
 
   console.log('Viewport width:', window.innerHeight);
-  
   return (
     <BrowserRouter>
       <Routes>
         <Route index element={< WelcomePage />} />
+        <Route path='/mobileWelcome' element={< MobileWelcome />} />
         <Route path='/about' element={< About />} />
         <Route path='/resume' element={< Resume />} />
         <Route path='/projects' element={< Project />} />

@@ -1,0 +1,51 @@
+.mobile-welcome {
+    width: inherit;
+    height: inherit;
+    background-color: #C1EBE6;
+}
+
+.mobile-start-text {
+    display: block;
+    position: relative;
+    width: 70vw;
+    left: 18vw;
+    font-weight: 300;
+    font-size: 4.7vh;
+    color: #1B998B;
+    top: 5.5vh;
+    text-align: left;
+    height: 10vh;
+}
+
+.mobile-text-and-image {
+    display: block;
+    position: static;
+    bottom: 0;
+    margin-top: 2vh;
+}
+
+.mobile-backTitle {
+    z-index: 1;
+}
+
+.mobile-centreImage {
+    position: absolute;
+    z-index: 2;
+    width: 75vw;
+    height: 67vh;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 42vh;
+}
+
+.mobile-frontTitle {
+    z-index: 3;
+}
+
+.titles{
+    position: absolute;
+    left: 18vw;
+    top: 12vh;
+    width: 60vw;
+    height: 70vh;
+}

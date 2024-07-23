@@ -2,11 +2,18 @@ import './mobileWelcome.css';
 import { ReactComponent as TwiceF } from './TWICE NAMED f.svg';
 import { ReactComponent as TwiceB } from './TWICE NAMED b.svg';
 import { ReactComponent as Centre } from './mobile Start Image.svg';
-import { NavLink } from 'react-router-dom';
+import MobileMenu from '../mobileMenu/mobileMenu';
+import { useState } from 'react';
 
 const MobileWelcome = () => {
 
     document.body.classList.add('hide-scrollbars');
+
+    const [isContentVisible, setContentVisible] = useState(false);
+
+    const handleButtonClick = () => {
+      setContentVisible(true);
+    };
 
     return (
         <div className="mobile-welcome">
@@ -17,12 +24,10 @@ const MobileWelcome = () => {
                 <Centre className='mobile-centreImage' />
                 <TwiceF className='mobile-frontTitle titles' />
             </div>
-            <NavLink to='/projects'>
-            <div className="mobile-explore">
+            <div className="mobile-explore" onClick={handleButtonClick}>
                 <p>explore</p>
             </div>
-
-            </NavLink>
+            {isContentVisible && <MobileMenu />}
         </div>
     );
 }

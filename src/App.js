@@ -8,8 +8,6 @@ import Blog from './blogPage/Blog';
 import ResponsiveComponent from './ResponsiveTree';
 
 function App() {
-
-  console.log('Viewport width:', window.innerHeight);
   return (
     <BrowserRouter>
       <Routes>
@@ -19,7 +17,6 @@ function App() {
         <Route path='/projects' element={< Project />} />
         <Route path='/weird' element={< Weird />} />
         <Route path='/blog' element={< Blog />} />
-
       </Routes>
     </BrowserRouter>
   );

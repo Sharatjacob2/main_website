@@ -33,11 +33,11 @@
 .mobile-centreImage {
     position: absolute;
     z-index: 2;
-    width: 120vw;
-    height: 67vh;
+    width: 100vw;
+    height: 57vh;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 1vh;
+    bottom: -10vh;
 }
 
 .mobile-frontTitle {

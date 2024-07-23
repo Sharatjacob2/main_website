@@ -68,5 +68,7 @@
 }
 
 .mobile-explore#p{
-    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
 }

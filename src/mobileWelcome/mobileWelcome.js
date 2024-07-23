@@ -20,11 +20,12 @@ const MobileWelcome = () => {
     //     window.addEventListener('resize', handleResize);
     // }, [navigate]);
 
+    document.body.classList.add('hide-scrollbars');
 
     return (
         <div className="mobile-welcome">
-            <p className="mobile-start-text">honestly, desktop is a better view for this but I’m so glad
-                you came, so welcome to the personal website of</p>
+            <div className="mobile-start-text">honestly, desktop is a better view for this but I’m so glad
+                you came, so welcome to the personal website of</div>
             <div className="mobile-text-and-image">
                 <TwiceB className='mobile-backTitle titles' />
                 <Centre className='mobile-centreImage' />

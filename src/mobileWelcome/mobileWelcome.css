@@ -14,7 +14,8 @@
     color: #1B998B;
     top: 5.5vh;
     text-align: left;
-    height: 10vh;
+    height: fit-content;
+    margin-bottom: 2vh;
 }
 
 .mobile-text-and-image {
@@ -22,6 +23,7 @@
     position: static;
     bottom: 0;
     margin-top: 2vh;
+    height: fit-content;
 }
 
 .mobile-backTitle {
@@ -31,11 +33,11 @@
 .mobile-centreImage {
     position: absolute;
     z-index: 2;
-    width: 75vw;
+    width: 120vw;
     height: 67vh;
     left: 50%;
     transform: translateX(-50%);
-    top: 42vh;
+    bottom: 1vh;
 }
 
 .mobile-frontTitle {

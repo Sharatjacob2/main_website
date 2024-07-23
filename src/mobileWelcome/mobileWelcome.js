@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
 import './mobileWelcome.css';
 import { ReactComponent as TwiceF } from './TWICE NAMED f.svg';
 import { ReactComponent as TwiceB } from './TWICE NAMED b.svg';
@@ -8,17 +8,17 @@ import { ReactComponent as Centre } from './mobile Start Image.svg';
 
 const MobileWelcome = () => {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth >= 800) {
-                navigate('/');
-            }
-        };
-        // Add event listener for window resize
-        window.addEventListener('resize', handleResize);
-    }, [navigate]);
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         if (window.innerWidth >= 800) {
+    //             navigate('/');
+    //         }
+    //     };
+    //     // Add event listener for window resize
+    //     window.addEventListener('resize', handleResize);
+    // }, [navigate]);
 
 
     return (

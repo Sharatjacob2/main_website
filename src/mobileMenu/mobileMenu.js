@@ -6,6 +6,9 @@ import { ReactComponent as WeirdImage } from '../landingPage/iconsLandingPage/We
 import { ReactComponent as ResumeImage } from '../landingPage/iconsLandingPage/ResumeImage.svg';
 import { ReactComponent as WriteImage } from '../landingPage/iconsLandingPage/WriterImage.svg';
 import { NavLink } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
+
 
 
 const MobileMenu = () => {
@@ -18,7 +21,24 @@ const MobileMenu = () => {
         { title: "blog", color: '#C5D86D', svgName: WriteImage, id: 5 }
     ];
 
+    const [showElement, setShowElement] = useState(false);
+
+    const handleClick = () => {
+        setShowElement(true);
+    };
+
+    const elementRef = useRef(null);
+
+    useEffect(() => {
+        if (elementRef.current) {
+            handleClick();
+        }
+    }, []); // Empty dependency array ensures this runs only once after the initial render
+
+
     return (
+        <div ref={elementRef} className="mobile-menu-transition">
+        <CSSTransition in={showElement} timeout={800} classNames="fade" unmountOnExit>
         <div className="mobile-menu">
             {mobileSelectors.map((mobileSelector) => (
                 <NavLink to={`/${mobileSelector.title}`} key={`mobile-${mobileSelector.id}`}>
@@ -41,6 +61,8 @@ const MobileMenu = () => {
                     </div>
                 </NavLink>
             ))}
+        </div>
+        </CSSTransition>
         </div>
     );
 }

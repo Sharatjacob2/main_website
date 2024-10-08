@@ -1,3 +1,28 @@
 .About-Page{
-    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.desc-para-1{
+    width: 50%;
+    position: relative;
+    color: white;
+    display: inline-block;
+    background-color: black;
+    padding: 30px;
+    vertical-align: top;
+    left: 0px;
+}
+
+.para-1{
+    font-weight: 300;
+    font-size: 30px;
+    text-align: left;
+}
+
+.para-1-image{
+    display: inline-block;
+    background-color: antiquewhite;
+    width: 40%;
 }

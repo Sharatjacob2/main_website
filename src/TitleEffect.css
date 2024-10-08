@@ -1,11 +1,12 @@
 .backTitle{
     display: inline-block;
-    position: relative;
+    position: absolute;
     z-index: 1;
     width: 85.469vw;
     height: 15.625vw;
     left: 50%;
     transform: translateX(-50%);
+    top: 0.55vw;
 }
 
 .centreImage{
@@ -22,6 +23,7 @@
     height: 15.625vw;
     left: 50%;
     transform: translateX(-50%);
+    top: 0.55vw;
 }
 
 .starter{
@@ -53,4 +55,11 @@
 .fade-enter-active {
     opacity: 1;
     transition: opacity 500ms;
+}
+
+.transition-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
 }

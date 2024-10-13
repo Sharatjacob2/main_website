@@ -2,11 +2,12 @@
     min-height: 100%;
     width: 100%;
     /* position: absolute; */
+    overflow: hidden;
 }
 
 .downloadtext{
     display: inline;
-    font-size: 10vh;
+    font-size: 5vw;
     font-weight: 300;
 }
 
@@ -21,6 +22,9 @@
     position: relative;
 }
 
+.download-icon{
+    margin-right: 1.5vw;
+}
 .download-button:hover{
     opacity: 75%;
 }
@@ -37,5 +41,13 @@
     left: 50%;
     transform: translateX(-50%);
     margin-top: 10vh;
+    width: 80%;
+    height: 50%;
 }
 
+@media (max-width: 800px) {
+.pageone{
+    margin-top: 3vh;
+}
+
+}

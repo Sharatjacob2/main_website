@@ -64,3 +64,9 @@
     overflow: visible;
     display: block;
 }
+
+@media (max-width: 800px) {
+    .transition-cover{
+        min-height: 30vh;
+    }
+}

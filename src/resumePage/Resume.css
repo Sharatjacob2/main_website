@@ -1,3 +1,41 @@
 .Resume-Page{
-    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    /* position: absolute; */
 }
+
+.downloadtext{
+    display: inline;
+    font-size: 10vh;
+    font-weight: 300;
+}
+
+.download-button{
+    padding: 4vh 5vh;
+    background-color: black;
+    stroke:none;
+    color: white;
+    opacity: 50%;
+    border-radius: 2vh;
+    /* top: 10vh; */
+    position: relative;
+}
+
+.download-button:hover{
+    opacity: 75%;
+}
+
+.download{
+    display: block;
+    position: relative;
+    /* top: 10vh; */
+}
+
+.pageone{
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10vh;
+}
+

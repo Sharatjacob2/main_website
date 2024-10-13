@@ -3,6 +3,7 @@ import {ReactComponent as ProjectF} from './PROJECTS f.svg';
 import {ReactComponent as ProjectB} from './PROJECTS b.svg';
 import {ReactComponent as ProjectCentre} from './Projects Centre.svg';
 import './Project.css';
+import Footer from "../footer/Footer";
 
 
 const Project = () => {
@@ -11,6 +12,8 @@ const Project = () => {
     return (
         <div className="Projects-Page" style={{backgroundColor: '#D7263D'}}>
             <TitleEffect title ={title}/>
+            <Footer color = {'#2E294E'}/>
+
         </div>
     );
 }

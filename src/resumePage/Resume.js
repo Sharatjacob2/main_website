@@ -11,6 +11,8 @@ import Footer from "../footer/Footer";
 
 
 const Resume = () => {
+    document.body.classList.remove('hide-scrollbars');
+
     const title = { front: ResumeF, back: ResumeB, centre: ResumeCentre, top: -21.094, left: -11.875, width: 55.313, height: 55.313 };
 
     return (

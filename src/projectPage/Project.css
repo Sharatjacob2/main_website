@@ -87,5 +87,8 @@
     .project-image{
         width: 50vw;
         height: 50vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-100%);
     }
 }

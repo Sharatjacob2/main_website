@@ -17,9 +17,7 @@ const ProjectItem = (props) => {
                 <div className="project-desc">{desc}</div>
                 <div className="project-link">{link}</div>
             </div>
-            <div className="project-image">
-                <SvgIcon />
-            </div>
+            <SvgIcon className="project-image"/>
             <div className="project-divider"></div>
         </div>
     );

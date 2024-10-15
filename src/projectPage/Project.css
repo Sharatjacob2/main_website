@@ -83,4 +83,8 @@
         font-weight: 300;
         text-align: center;
     }
+
+    .project-image{
+        margin: 5vh;
+    }
 }

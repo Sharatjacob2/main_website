@@ -27,6 +27,8 @@ const ProjectItem = (props) => {
 
 
 const Project = () => {
+    document.body.classList.remove('hide-scrollbars');
+
     const title = { front: ProjectF, back: ProjectB, centre: ProjectCentre, top: -14.063, right: 0, width: 62.5, height: 54.688 };
 
     const project_items = [

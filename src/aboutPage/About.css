@@ -1,28 +1,87 @@
 .About-Page{
     min-height: 100%;
     width: 100%;
-    position: absolute;
 }
 
-.desc-para-1{
-    width: 50%;
-    position: relative;
+.about, .about-first{
+    width: 80%;
     color: white;
-    display: inline-block;
-    background-color: black;
-    padding: 30px;
-    vertical-align: top;
-    left: 0px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10vh 0vh;
+    font-weight: 300;
+    font-size: 5vh;
+    background-color:  #C8C5DB;
 }
 
-.para-1{
-    font-weight: 300;
-    font-size: 30px;
+.about-first, .about-second{
+    justify-content:space-between;
+    display: flex;
+}
+
+.about-first-para,.about-second-para{
+    width: 40%;
+    display: inline-block;
+}
+
+.about-first-para, .about-third-para{
     text-align: left;
 }
+.about-first-para,.about-second-para, .about-third-para{
+    padding: 10vh;
+    background-color: #201D37;
+}
 
-.para-1-image{
+.about-second-para{
+    text-align: right;
+    position: relative;
+    right: 0;
+
+}
+
+.about-third-para{
+    position: relative;
+}
+
+.about-first-image{
     display: inline-block;
-    background-color: antiquewhite;
-    width: 40%;
+    position: relative;
+    
+}
+
+.about-first-image-svg{
+    position: relative;
+    left: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 45vh;
+    width: 45vh;
+}
+
+.about-second-image-svg{
+    position: absolute;
+    bottom: 0;
+}
+.about-second-image{
+    position: relative;
+}
+.about-first{
+    position: relative;
+}
+
+
+@media (max-width: 800px) {
+    .about, .about-first{
+        font-size: 3.75vw;
+    }
+
+    .about-second-image, .about-first-image{
+        display: none;
+    }
+
+    .about-first-para, .about-second-para{
+        width: 100%;
+        text-align: left;
+    }
 }

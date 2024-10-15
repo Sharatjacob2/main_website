@@ -74,6 +74,7 @@
 @media (max-width: 800px) {
     .about, .about-first{
         font-size: 3.75vw;
+        margin: 5vw 0vh;
     }
 
     .about-second-image, .about-first-image{
@@ -84,4 +85,8 @@
         width: 100%;
         text-align: left;
     }
+
+    .about-first-para,.about-second-para, .about-third-para{
+        padding: 10vw;
+    }    
 }

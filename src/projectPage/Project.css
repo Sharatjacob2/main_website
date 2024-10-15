@@ -1,3 +1,86 @@
 .Projects-Page{
-    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+.project-item{
+    position: relative;
+    margin-bottom: 8vh;
+    margin-top: 3vh;
+}
+.project-text{
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    vertical-align:top;
+    color: white;
+}
+
+.project-image{
+    display: inline-block;
+    position: relative;
+}
+
+.project-title{
+    font-size: 8vh;
+    font-weight: 400;
+}
+
+.project-desc, .project-link{
+    font-size: 4.5vh;
+    font-weight: 300;
+    width: 80%;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+
+}
+
+.project-divider{
+    height: 0.25vh;
+    width: 80%;
+    background-color: white;
+    opacity: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+}
+
+.project-subtitle{
+    font-size: 5.5vh;
+    font-weight: 300;
+}
+
+
+@media (max-width: 800px) {
+    .project-title{
+        font-size: 7vw;
+        text-align: center;
+        width: 50%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .project-desc, .project-link{
+        font-size: 4.5vw;
+        font-weight: 300;
+        width: 80%;
+        margin-top: 5vw;
+        margin-bottom: 8vw;   
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .project-text{
+        width: 90%;
+    }
+    
+    .project-subtitle{
+        font-size: 5.5vw;
+        font-weight: 300;
+        text-align: center;
+    }
 }

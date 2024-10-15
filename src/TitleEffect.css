@@ -65,7 +65,7 @@
     display: block;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
     .transition-cover{
         min-height: 30vh;
     }

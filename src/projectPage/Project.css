@@ -85,6 +85,7 @@
     }
 
     .project-image{
-        margin: 5vh;
+        width: 50vw;
+        height: 50vw;
     }
 }

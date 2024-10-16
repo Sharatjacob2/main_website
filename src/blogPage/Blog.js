@@ -13,7 +13,7 @@ const BlogItem = (props) => {
             <div className="blog-title">{title}</div>
             <div className="blog-preview">{preview}</div>
             <div className="blog-date">{date}</div>
-            <div className="project-divider"></div>
+            <div className="blog-divider"></div>
 
         </div>
       );

@@ -11,7 +11,6 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 6.75vw;
 }
 
 .blog-title{
@@ -46,4 +45,22 @@
 
 .blog-date{
     font-size: 2vw; 
+}
+
+.blog-divider{
+        height: 0.25vh;
+        width: 80%;
+        background-color: white;
+        opacity: 50%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 8vh 0vh;    
+}
+
+@media (max-width: 800px) {
+    .blog-divider{
+        margin: 4vh 0vh;    
+
+    }
 }

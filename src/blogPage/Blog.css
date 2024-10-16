@@ -1,3 +1,49 @@
 .Blog-Page{
-    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blog-item{
+    text-align: left;
+    color: white;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 6.75vw;
+}
+
+.blog-title{
+    font-size: 3.75vw;
+    margin-bottom: 1vw;
+}
+
+.blog-preview{
+    font-weight: 300;
+    margin-bottom: 2vw;
+    font-size: 3vw;
+}
+
+.blog-main-title{
+    font-size: 7vw;
+    text-align: left;
+    left: 10%;
+    position: relative;
+    color: white;
+    margin-bottom: 0.75vw;
+    margin-top: 2vh;
+}
+
+.blog-main-title-underline{
+    background-color: #B7A555;
+    height: 1vw;
+    width: 50%;
+    position: relative;
+    left: 10%;
+    margin-bottom: 5vw;
+}
+
+.blog-date{
+    font-size: 2vw; 
 }

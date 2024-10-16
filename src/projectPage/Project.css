@@ -69,15 +69,25 @@
         left: 50%;
         transform: translateX(-50%);
     }
+    .project-desc{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 8vw;   
+    }
+
+    .project-link{
+        position: relative;
+        left: 10%;
+    }
+    .project-text{
+        margin-bottom: 5vh;
+    }
     .project-desc, .project-link{
         font-size: 4.5vw;
         font-weight: 300;
         width: 80%;
         margin-top: 5vw;
-        margin-bottom: 8vw;   
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     .project-text{

@@ -11,8 +11,13 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0.6;
 }
 
+.blog-item:hover{
+    opacity: 1;
+
+}
 .blog-title{
     font-size: 3.75vw;
     margin-bottom: 1vw;

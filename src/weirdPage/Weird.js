@@ -20,7 +20,7 @@ const WeirdItem = (props) => {
     const {svgNames: SvgIcon, description} = props.item;
     return (
         <div className="weird-item">
-            <img src={SvgIcon} className="weird-image"/>
+            <img src={SvgIcon} className="weird-image" alt="images"/>
             <div className="weird-desc">{description}</div>
             <div className="project-divider"></div>
         </div>

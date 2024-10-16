@@ -23,8 +23,8 @@ const Resume = () => {
                     <p className="downloadtext">Download Resume</p>
                 </button>
             </a>
-            <img src={PageOne} className="pageone"/>
-            <img src ={PageTwo} className="pageone"/>
+            <img src={PageOne} className="pageone" alt="page one"/>
+            <img src ={PageTwo} className="pageone" alt="page two"/>
             <Footer color = {'#2E294E'}/>
         </div>
 

@@ -13,6 +13,7 @@ const WeirdItem = (props) => {
         <div className="weird-item">
             <SvgIcon className="weird-image"/>
             <div className="weird-desc">{description}</div>
+            <div className="project-divider"></div>
         </div>
       );
 }
@@ -23,7 +24,8 @@ const Weird = () => {
     document.body.classList.remove('hide-scrollbars');
     const weirditems = [
         {svgNames: WeirdLoader, description: "a collection of pixel art made by coloring cells in  Google Sheet"},
-        {svgNames: WeirdLoader, description: "a collection of pixel art made by coloring cells in  Google Sheet"},
+        {svgNames: WeirdLoader, description: "a collection of attempted modern art made with starter code from the p5js docs"},
+        {svgNames: WeirdLoader, description: "a collection of handdrawn animated videos made on flipaclip"},
     ]
     return (
         <div className="Weird-Page" style={{backgroundColor: '#1B998B'}}>

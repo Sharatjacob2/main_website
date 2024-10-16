@@ -5,7 +5,8 @@
 }
 
 .weird-image{
-    width: 70vw;
+    width: 60vw;
+    height: 20vw;
 }
 
 .weird-desc{
@@ -20,7 +21,7 @@
     width: 80%;
     color: white;
     font-weight: 300;
-    margin-bottom: 5vw;
+    margin-bottom: 7vw;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -30,12 +31,10 @@
 @media (max-width: 800px) {
     .weird-item{
         font-size: 7vw;
-        margin-bottom: 2.5vw;
+        margin-bottom: 6vh;
 
     }
     .weird-desc{
-        width: 80%;
-        margin: 1vw;
-
+        width: 95%;
     }    
 }

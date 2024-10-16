@@ -13,6 +13,8 @@ const BlogItem = (props) => {
             <div className="blog-title">{title}</div>
             <div className="blog-preview">{preview}</div>
             <div className="blog-date">{date}</div>
+            <div className="project-divider"></div>
+
         </div>
       );
 }
@@ -21,6 +23,7 @@ const Blog = () => {
     document.body.classList.remove('hide-scrollbars');
 
     const blogitems = [
+        {title: "The lethality of training on human feedback", preview: "Human operators are fallible, breakable, and manipulable.  Human raters make systematic errors - regular, compactly describable, predictable errors.  To faithfully learn....", date: "13th JAN 2023"},
         {title: "The lethality of training on human feedback", preview: "Human operators are fallible, breakable, and manipulable.  Human raters make systematic errors - regular, compactly describable, predictable errors.  To faithfully learn....", date: "13th JAN 2023"},
         {title: "The lethality of training on human feedback", preview: "Human operators are fallible, breakable, and manipulable.  Human raters make systematic errors - regular, compactly describable, predictable errors.  To faithfully learn....", date: "13th JAN 2023"}
     ]

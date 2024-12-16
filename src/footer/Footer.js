@@ -19,7 +19,7 @@ const Footer = (props) => {
         {link: "https://mail.google.com/mail/?view=cm&to=sharatjacob2@gmail.com", svgName: Mail},
         {link: "https://www.linkedin.com/in/sharat-jacob-jacob/", svgName: LinkedIn},
         {link: "https://www.instagram.com/sharatj_2/", svgName: Instagram},
-        {link: "https://x.com/thetwicenamed", svgName: Twitter},
+        {link: "https://x.com/sharatj_2", svgName: Twitter},
     ]
     return (
         <div className="footer" style={{ backgroundColor: color }}>

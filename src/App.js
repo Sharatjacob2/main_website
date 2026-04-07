@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route index element={< ResponsiveComponent />} />
         <Route path='/about' element={< About />} />
-        <Route path='/resume' element={< Resume />} />
+        <Route path='/cv&resume' element={< Resume />} />
         <Route path='/projects' element={< Project />} />
         <Route path='/weird' element={< Weird />} />
         <Route path='/blog' element={< Blog />} />

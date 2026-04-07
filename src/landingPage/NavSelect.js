@@ -13,6 +13,7 @@ const NavSelect = (props) => {
         console.log(selectorId);
         setSelectorId(selector.id);
         props.onSelectorChange(selector.color);
+        
         setTimeout(() => {
             navigate('/' + selector.title);
         }, 1000); // 1000ms = 1 second (match this duration with your animation duration)

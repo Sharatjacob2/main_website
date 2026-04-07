@@ -23,7 +23,7 @@ const Resume = () => {
             <a href="/Sharat Resume.pdf" download="Sharat Resume.pdf" className="download">
                 <button className="download-button">
                     <DownloadIcon className="download-icon" />
-                    <p className="downloadtext">Download Resume</p>
+                    <p className="downloadtext">Download CV</p>
                 </button>
             </a>
             

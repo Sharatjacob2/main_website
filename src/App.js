@@ -6,6 +6,8 @@ import Project from './projectPage/Project';
 import Weird from './weirdPage/Weird';
 import Blog from './blogPage/Blog';
 import ResponsiveComponent from './ResponsiveTree';
+import BlogPost from './blogPage/BlogPost';
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path='/projects' element={< Project />} />
         <Route path='/weird' element={< Weird />} />
         <Route path='/blog' element={< Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
       </Routes>
     </BrowserRouter>
   );

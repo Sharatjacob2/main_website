@@ -1,0 +1,141 @@
+.floating-menu {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+
+    display: flex;
+    align-items: flex-end;
+
+    z-index: 1000;
+}
+
+.floating-links {
+    display: flex;
+    gap: 1rem;
+
+    margin-right: 1rem;
+
+    opacity: 0;
+    transform: translateX(40px);
+
+    pointer-events: none;
+
+    transition: 0.25s ease;
+}
+
+.floating-menu:hover .floating-links {
+    opacity: 1;
+    transform: translateX(0);
+
+    pointer-events: auto;
+}
+
+.menu-card {
+    width: 5.5rem;
+    height: 2.5rem;
+
+    background: white;
+
+    border: 2px solid black;
+
+    box-shadow: 6px 6px 0 black;
+
+    color: black;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition: 0.15s ease;
+
+    transform: translate(0, 0);
+}
+
+.menu-card:hover {
+    transform: translate(-6px, -6px);
+
+    box-shadow: 12px 12px 0 black;
+}
+
+.active-link {
+    background: #C5D86D;
+
+    transform: translate(-3px, -3px);
+
+    box-shadow: 9px 9px 0 black;
+}
+
+.floating-button {
+    width: 60px;
+    height: 60px;
+
+    background: white;
+
+    border: 2px solid black;
+
+    box-shadow: 6px 6px 0 black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.floating-button:hover {
+    transform: translate(-3px, -3px);
+
+    box-shadow: 9px 9px 0 black;
+}
+
+@media (max-width: 900px) {
+    .floating-links {
+        gap: 0.5rem;
+    }
+
+    .menu-card {
+        width: 75px;
+        height: 75px;
+
+        font-size: 0.75rem;
+    }
+
+    .floating-button {
+        width: 50px;
+        height: 50px;
+
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .floating-menu {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .floating-links {
+        flex-wrap: wrap;
+
+        width: 260px;
+
+        justify-content: flex-end;
+    }
+
+    .menu-card {
+        width: 70px;
+        height: 70px;
+
+        font-size: 0.7rem;
+    }
+}

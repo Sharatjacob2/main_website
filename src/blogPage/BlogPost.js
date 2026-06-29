@@ -36,7 +36,7 @@ function BlogPost() {
                     </h1>
 
                     <div className="post-author">
-                        {metadata.author}
+                        By {metadata.author}
                     </div>
 
                     <div className="post-meta">

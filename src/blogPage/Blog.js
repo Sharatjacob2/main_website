@@ -6,7 +6,7 @@ import { ReactComponent as BlogCentre } from './Blog Centre.svg';
 import './Blog.css';
 import Footer from "../footer/Footer";
 import { Link } from "react-router-dom";
-import fm from "front-matter";
+import parseFrontmatter from "../utils/parseFrontmatter";
 
 const slugs = [
     "lethality-human-feedback",
@@ -49,11 +49,11 @@ const Blog = () => {
                 const response = await fetch(`/posts/${slug}.md`);
                 const text = await response.text();
 
-                const parsed = fm(text);
+                const parsed = parseFrontmatter(text);
 
                 return {
                     slug,
-                    ...parsed.attributes
+                    ...parsed.metadata
                 };
             })
         ).then(setBlogitems);

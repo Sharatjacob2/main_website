@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import './BlogPost.css';
-import fm from "front-matter";
+import parseFrontmatter from "../utils/parseFrontmatter";
 
 function BlogPost() {
     const { slug } = useParams();
@@ -13,14 +13,14 @@ function BlogPost() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [slug]);
-    
+
     useEffect(() => {
         fetch(`/posts/${slug}.md`)
             .then(res => res.text())
             .then(text => {
-                const parsed = fm(text);
-                setMetadata(parsed.attributes);
-                setContent(parsed.body);
+                const parsed = parseFrontmatter(text);
+                setMetadata(parsed.metadata);
+                setContent(parsed.content);
             });
 
             

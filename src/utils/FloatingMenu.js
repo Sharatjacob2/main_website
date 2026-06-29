@@ -3,6 +3,10 @@ import "./FloatingMenu.css";
 
 function FloatingMenu() {
     const { pathname } = useLocation();
+    
+    if (pathname === "/") {
+        return null;
+    }
 
     const links = [
         { path: "/about", label: "ABOUT" },

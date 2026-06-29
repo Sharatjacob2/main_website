@@ -40,7 +40,7 @@ function BlogPost() {
                     </div>
 
                     <div className="post-meta">
-                        {metadata.date} • {metadata.time}
+                        {metadata.date} • {metadata.readingTime} minute read
                     </div>
 
                 </div>

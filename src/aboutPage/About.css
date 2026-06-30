@@ -14,6 +14,8 @@
     font-weight: 300;
     font-size: 5vh;
     background-color:  #C8C5DB;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0 black;
 }
 
 .about-first, .about-second{
@@ -31,7 +33,8 @@
 }
 .about-first-para,.about-second-para, .about-third-para{
     padding: 10vh;
-    background-color: #201D37;
+    background-color: #b8b0e8;
+    color: black;
 }
 
 .about-second-para{

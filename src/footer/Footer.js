@@ -37,7 +37,7 @@ return (
         </div>
 
         <div className="footer-signature">
-            evolutionary games • interpretability • biology
+            emergent complexity • alignment • cooperative strategies
         </div>
 
         <div className="footer-icons">
@@ -50,7 +50,7 @@ return (
         </div>
 
         <div className="footer-credit">
-            twicenamed • 2026
+            alignedkitten • 2026
         </div>
     </div>
 );

@@ -30,7 +30,7 @@ const Resume = () => {
             <PageOne className="pageone"/>
             <PageTwo className="pageone"/>
             <PageThree className="pageone"/>
-            <Footer color = {'#2E294E'}/>
+            <Footer color = {'#e08257'}/>
         </div>
 
     );

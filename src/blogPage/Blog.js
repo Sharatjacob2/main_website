@@ -8,7 +8,7 @@ import Footer from "../footer/Footer";
 import { Link } from "react-router-dom";
 import parseFrontmatter from "../utils/parseFrontmatter";
 
-const slugs = ["lethality-human-feedback", "lethality-human-feedback", "lethality-human-feedback",];
+const slugs = ["lethality-human-feedback", "bad-photos", "lethality-human-feedback",];
 
 const BlogItem = (props) => {
   const { slug, title, preview, date, readingTime } = props.item;

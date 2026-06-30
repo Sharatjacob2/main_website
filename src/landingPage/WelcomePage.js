@@ -1,7 +1,6 @@
 import './WelcomePage.css';
 import { ReactComponent as Welcome } from './WELCOME.svg';
 import { ReactComponent as WelcomeBack } from './WELCOME back.svg';
-
 import { ReactComponent as AboutImage } from './iconsLandingPage/AboutImage.svg';
 import { ReactComponent as ProjectImage } from './iconsLandingPage/ProjectImage.svg';
 import { ReactComponent as WeirdImage } from './iconsLandingPage/WeirdImage.svg';
@@ -18,11 +17,11 @@ const WelcomePage = () => {
     // const navigate = useNavigate();
 
     const selectors = [
-        { title: "projects", color: '#D7263D', svgName: ProjectImage, id: 1 },
-        { title: "cv&resume", color: '#F46036', svgName: ResumeImage, id: 2 },
-        { title: "about", color: '#2E294E', svgName: AboutImage, id: 3 },
-        { title: "weird", color: '#1B998B', svgName: WeirdImage, id: 4 },
-        { title: "blog", color: '#C5D86D', svgName: WriteImage, id: 5 }
+        { title: "projects", color: '#b9283b', svgName: ProjectImage, id: 1 },
+        { title: "cv&resume", color: '#b34c30', svgName: ResumeImage, id: 2 },
+        { title: "about", color: '#2f2a4d', svgName: AboutImage, id: 3 },
+        { title: "weird", color: '#109789', svgName: WeirdImage, id: 4 },
+        { title: "blog", color: '#acbc64', svgName: WriteImage, id: 5 }
     ];
 
     const [colorValue, setColorValue] = useState('white');

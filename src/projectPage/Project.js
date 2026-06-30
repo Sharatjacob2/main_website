@@ -47,12 +47,12 @@ const Project = () => {
         
     ]
     return (
-        <div className="Projects-Page" style={{ backgroundColor: '#D7263D' }}>
+        <div className="Projects-Page" style={{ backgroundColor: '#8d2835' }}>
             <TitleEffect title={title} />
             {project_items.map((project_item) => (
             <ProjectItem item = {project_item}/>
             ))}
-            <Footer color={'#2E294E'} />
+            <Footer color={'#c96a6a'} />
         </div>
     );
 }

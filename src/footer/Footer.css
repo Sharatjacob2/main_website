@@ -1,26 +1,99 @@
-.footer{
+.footer {
     width: 100%;
-    display: block;
-    position: relative;
-    bottom: -1vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
     margin-top: 10vh;
-    padding: 1vh 0vh;
+
+    padding: 3vh 0;
 }
 
-.footericons{
-    position: relative;
-    margin: 1vw;
-    width: 4vw;
-    height: 4vw;
-    vertical-align: bottom;
-    padding: 0.5vw;
+.footer-status {
+    font-size: 0.9rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    opacity: 0.6;
+
+    margin-bottom: 0.5rem;
+}
+
+.footer-signature {
+    font-size: 1rem;
+
+    margin-bottom: 2rem;
+
+    text-align: center;
+}
+
+.footer-icons {
+    display: flex;
+
+    gap: 1vw;
+
+    margin-bottom: 2rem;
+}
+
+.footer-credit {
+    font-size: 0.85rem;
+
+    opacity: 0.6;
+
+    letter-spacing: 1px;
+}
+
+.footer-card {
+    width: 5vw;
+    height: 5vw;
+
+    min-width: 55px;
+    min-height: 55px;
+
+    /* background: white; */
+
+    border: 2px solid black;
+
+    box-shadow: 5px 5px 0 black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    transition: 0.15s ease;
+
+    transform: translate(0, 0);
+}
+
+.footer-card:hover {
+    transform: translate(-5px, -5px);
+
+    box-shadow: 10px 10px 0 black;
+}
+
+.footericons {
+    width: 60%;
+    height: 60%;
+
+    fill: currentColor;
+
+    color: black;
 }
 
 @media (max-width: 800px) {
-    .footer{
-        padding: 2.5vh 0vh;
+    .footer {
+        gap: 3vw;
+        padding: 3vh 0;
     }
-    .footericons{
-        margin: 1.5vw;
+
+    .footer-card {
+        width: 60px;
+        height: 60px;
     }
 }

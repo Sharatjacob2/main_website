@@ -55,7 +55,7 @@ const Blog = () => {
     right: 27.344,
   };
   return (
-    <div className="Blog-Page" style={{ backgroundColor: "#C5D86D" }}>
+    <div className="Blog-Page" style={{ backgroundColor: "#9dae4d" }}>
       <TitleEffect className="title-margin" title={title} />
       <div className="blog-main-title">POSTS</div>
       <div className="blog-main-title-underline"></div>
@@ -64,7 +64,7 @@ const Blog = () => {
           <BlogItem key={blogitem.slug} item={blogitem} />
         ))}
       </div>
-      <Footer color={"#B7A555"} />
+      <Footer color={"#c6bc90"} />
     </div>
   );
 };

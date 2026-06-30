@@ -37,12 +37,12 @@ const Weird = () => {
         {svgNames: FigmaArt, description: "a collection of digital designs made on Figma under an Unsplash craze"},
     ]
     return (
-        <div className="Weird-Page" style={{backgroundColor: '#1B998B'}}>
+        <div className="Weird-Page" style={{backgroundColor: '#26857a'}}>
             <TitleEffect title ={title}/>
             {weirditems.map((weirditem) => (
                 <WeirdItem item = {weirditem} />
             ))}
-            <Footer color = {'#062A26'}/>
+            <Footer color = {'#7db0aa'}/>
 
     </div>
       );

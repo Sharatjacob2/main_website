@@ -18,7 +18,7 @@ const Resume = () => {
     const title = { front: ResumeF, back: ResumeB, centre: ResumeCentre, top: -21.094, left: -11.875, width: 55.313, height: 55.313 };
 
     return (
-        <div className="Resume-Page" style={{ backgroundColor: '#F46036' }}>
+        <div className="Resume-Page" style={{ backgroundColor: '#c44e2d' }}>
             <TitleEffect title={title} />
             <a href="/Sharat Resume.pdf" download="Sharat Resume.pdf" className="download">
                 <button className="download-button">

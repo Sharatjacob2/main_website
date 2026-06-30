@@ -6,9 +6,15 @@ import './Footer.css';
 
 const FooterIcon = (props) => {
     const { link, svgName: SvgIcon } = props.item;
+
     return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-            <SvgIcon className="footericons"/>
+        <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-card"
+        >
+            <SvgIcon className="footericons" />
         </a>
     );
 }
@@ -21,13 +27,34 @@ const Footer = (props) => {
         {link: "https://www.instagram.com/sharatj_2/", svgName: Instagram},
         {link: "https://x.com/sharatj_2", svgName: Twitter},
     ]
-    return (
-        <div className="footer" style={{ backgroundColor: color }}>
+return (
+    <div
+        className="footer"
+        style={{ backgroundColor: color }}
+    >
+        <div className="footer-status">
+            currently thinking about
+        </div>
+
+        <div className="footer-signature">
+            evolutionary games • interpretability • biology
+        </div>
+
+        <div className="footer-icons">
             {footericonslist.map((footericon) => (
-                <FooterIcon item = {footericon}/>
+                <FooterIcon
+                    key={footericon.link}
+                    item={footericon}
+                />
             ))}
         </div>
-    );
+
+        <div className="footer-credit">
+            twicenamed • 2026
+        </div>
+    </div>
+);
 }
 
 export default Footer;
+

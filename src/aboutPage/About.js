@@ -37,7 +37,7 @@ function About() {
     }, []);
 
     const sections = content
-        ? content.split("\n***\n")
+        ? content.split("section-break")
         : [];
 
     return (

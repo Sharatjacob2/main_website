@@ -8,7 +8,7 @@ But software developers, biologists, mathematicians, architects all contain prof
 
 With that in mind, I would like to introduce myself as an Artist.
 
-***
+section-break
 
 # How I Ended Up Here
 
@@ -16,7 +16,7 @@ I am Sharat, a 25-year-old, with a taste for anything interesting that passes my
 
 My efforts are currently in my Master's in Computer Science where I focus on privacy of communication amongst multiple parties without having to rely on a trusted third person. On the side, I am steeped in AI Safety on multiple fronts, from creating explainers to running experiments on Google Colab to building interfaces around LLMs.
 
-***
+section-break
 
 # What attracts me?
 

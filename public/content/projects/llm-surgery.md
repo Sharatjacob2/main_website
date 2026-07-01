@@ -3,7 +3,7 @@ title: LLM SURGERY
 subtitle: Research Hackathon
 link: Open Google Colab →
 linkref: https://colab.research.google.com/drive/1R_IJgqpEDaRRspKGw7RHsQwSHes_a9iu?usp=sharing
-image: full-explanation
+image: bad-photos.png
 ---
 
 Developed LLM Surgery, aimed at creating and utilizing LLM agents capable of performing various mechanistic interventions on other language models.

@@ -6,7 +6,7 @@ import { ReactComponent as ProjectImage } from './iconsLandingPage/ProjectImage.
 import { ReactComponent as WeirdImage } from './iconsLandingPage/WeirdImage.svg';
 import { ReactComponent as ResumeImage } from './iconsLandingPage/ResumeImage.svg';
 import { ReactComponent as WriteImage } from './iconsLandingPage/WriterImage.svg';
-
+import Footer from '../footer/Footer';
 
 import NavSelect from './NavSelect';
 import { useEffect, useRef, useState } from 'react';
@@ -76,6 +76,8 @@ const WelcomePage = () => {
                 <Welcome className='Welcome-frontTitle' />
             </div>
             <div ref={secondElementRef} className={`main-sphere ${colorValue === 'white' ? '' : 'clicked'}`} style={{ backgroundColor: colorValue, top: `${topPosition}px` }}></div>
+                  {/* <Footer color={"#b594e9"} /> */}
+
         </div>
     );
 }

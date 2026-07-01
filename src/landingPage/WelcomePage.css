@@ -62,7 +62,7 @@
     background-color: white;
     width: 3.906vw;
     height: 3.906vw;
-    position: fixed;
+    position: absolute;
     left: 47.656vw;
     top: 14.688vw;
     z-index: 8;

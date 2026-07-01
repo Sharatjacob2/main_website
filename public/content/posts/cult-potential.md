@@ -1,5 +1,5 @@
 ---
-title: "The Immense Potential For Cult"
+title: "The immense potential for cult"
 preview: "With inspiration from Adolf (yes, that one)"
 date: "2nd JUL 2026" 
 author: Sharat Jacob Jacob

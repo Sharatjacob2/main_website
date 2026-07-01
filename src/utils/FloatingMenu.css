@@ -103,3 +103,25 @@
         display: none;
     }
 }
+
+.floating-logo {
+    width: 36px;
+    height: 36px;
+
+    object-fit: contain;
+
+    transition: transform 0.2s ease;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+.floating-button:hover .floating-logo {
+    transform: scale(1.08);
+}
+
+.floating-button:active {
+    transform: translate(2px, 2px);
+
+    box-shadow: 3px 3px 0 black;
+}

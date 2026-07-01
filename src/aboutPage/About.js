@@ -30,7 +30,7 @@ function About() {
 
         window.scrollTo(0, 0);
 
-        fetch("/about.md")
+        fetch("/content/about.md")
             .then(res => res.text())
             .then(setContent);
 

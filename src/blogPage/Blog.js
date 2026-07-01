@@ -31,7 +31,7 @@ const Blog = () => {
   useEffect(() => {
     Promise.all(
       slugs.map(async (slug) => {
-        const response = await fetch(`/posts/${slug}.md`);
+        const response = await fetch(`/content/posts/${slug}.md`);
         const text = await response.text();
 
         const parsed = parseFrontmatter(text);

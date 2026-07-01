@@ -21,7 +21,7 @@
 
     border: 2px solid black;
 
-    box-shadow: 10px 10px 0 black;
+    box-shadow: 10px 10px 0 rgb(145, 3, 3);
 
     display: flex;
 
@@ -38,7 +38,7 @@
 
     transform: translateY(-6px);
 
-    box-shadow: 16px 16px 0 black;
+    box-shadow: 16px 16px 0 rgb(95, 3, 3);
 }
 
 /* ---------- Text ---------- */

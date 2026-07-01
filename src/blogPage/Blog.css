@@ -13,7 +13,7 @@
   flex-direction: column;
 
   border: 2px solid black;
-  box-shadow: 10px 10px 0 black;
+  box-shadow: 10px 10px 0 rgb(110, 153, 76);
 
   transition: 0.2s ease;
 
@@ -26,7 +26,7 @@
 .blog-item:hover {
   transform: translate(-6px, -6px);
 
-  box-shadow: 16px 16px 0 black;
+  box-shadow: 16px 16px 0 rgb(29, 80, 7);
 
   opacity: 1;
 }

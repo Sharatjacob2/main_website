@@ -75,7 +75,7 @@
 }
 
 .about-card:hover h1 {
-    transform: translateX(8px);
+    transform:scale(1.2);
 }
 
 .about-card p {

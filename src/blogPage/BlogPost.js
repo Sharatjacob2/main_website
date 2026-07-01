@@ -15,7 +15,7 @@ function BlogPost() {
     }, [slug]);
 
     useEffect(() => {
-        fetch(`/posts/${slug}.md`)
+        fetch(`/content/posts/${slug}.md`)
             .then(res => res.text())
             .then(text => {
                 const parsed = parseFrontmatter(text);

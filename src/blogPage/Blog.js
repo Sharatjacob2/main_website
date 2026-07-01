@@ -8,16 +8,30 @@ import Footer from "../footer/Footer";
 import { Link } from "react-router-dom";
 import parseFrontmatter from "../utils/parseFrontmatter";
 
-const slugs = ["lethality-human-feedback", "bad-photos", "lethality-human-feedback",];
+const slugs = [
+  "lethality-human-feedback",
+  "bad-photos",
+  "cult-potential",
+];
 
 const BlogItem = (props) => {
-  const { slug, title, preview, date, readingTime } = props.item;
+  const { slug, title, preview, date, readingTime, image } = props.item;
+  console.log(props.item);
   return (
     <Link to={`/blog/${slug}`} className="blog-card-link">
       <div className="blog-item">
+        <div className="blog-image-wrapper">
+          <img
+            src={`/content/images/${image}`}
+            alt={title}
+            className="blog-image"
+          />
+        </div>
         <div className="blog-title">{title}</div>
         <div className="blog-preview">{preview}</div>
-        <div className="blog-date">{date} • {readingTime} mins</div>
+        <div className="blog-date">
+          {date} • {readingTime} mins
+        </div>
         <div className="blog-divider"></div>
       </div>
     </Link>

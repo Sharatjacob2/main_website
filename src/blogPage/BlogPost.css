@@ -35,7 +35,7 @@
 }
 
 .blog-post {
-    max-width: 850px;
+    max-width: 1050px;
     margin: 0 auto;
     padding: 100px 90px 80px;
     font-family: Georgia, serif;
@@ -152,11 +152,17 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Horizontal rules */
 .blog-post hr {
+
     border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    height: 2px;
+
+    background: #cedc7d;
+
     margin: 3rem 0;
+
+    opacity: 0.8;
 }
 
 /* Mobile */

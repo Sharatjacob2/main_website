@@ -3,6 +3,7 @@ title: "The lethality of training on human feedback"
 preview: "Human operators are fallible, breakable, and manipulable.  Human raters make systematic errors - regular, compactly describable, predictable errors.  To faithfully learn...."
 date: "13th JAN 2024" 
 author: Sharat Jacob Jacob
+image: lethality-human-feedback.png
 ---
 
 

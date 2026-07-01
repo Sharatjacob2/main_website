@@ -3,6 +3,8 @@ title: "Those photos are useless"
 preview: "Posting photos of your tour visit is insincere without providing a piece of you...."
 date: "1st JUL 2026" 
 author: Sharat Jacob Jacob
+image: bad-photos.png
+
 ---
 
 

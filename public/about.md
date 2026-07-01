@@ -20,7 +20,9 @@ My efforts are currently in my Master's in Computer Science where I focus on pri
 
 # What attracts me?
 
-I have dabbled in various possible careers throughout college, ranging from content creation to UI design, software development, and machine learning. Despite the rapid changes in career direction, I never regretted a single one. My core philosophy is an attraction to people who genuinely love what they do, especially when explaining their work lights them up.
+I have dabbled in various possible careers throughout college, ranging from content creation to UI design, software development, and machine learning. Despite the rapid changes in career direction, I never regretted a single one. 
+
+My core philosophy is an attraction to people who genuinely love what they do, especially when explaining their work lights them up.
 
 As mentioned above, I currently work in AI Alignment because I believe the problems are important—and because they're simply too much fun to ignore.
 

@@ -26,7 +26,7 @@ function ProjectItem({ item }) {
 
           <div className="project-subtitle">{item.subtitle}</div>
 
-          <div className="project-desc">{item.content}</div>
+          <div className="project-desc">{item.description}</div>
 
           <a
             href={item.linkref}

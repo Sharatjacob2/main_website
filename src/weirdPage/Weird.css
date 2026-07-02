@@ -1,40 +1,247 @@
 .Weird-Page{
-    min-height: 100%;
-    width: 100%;
-    overflow: hidden;
+
+    min-height:100vh;
+
+    overflow:hidden;
+}
+
+/* ---------- Header ---------- */
+
+.weird-header{
+
+    width:min(90%,1100px);
+
+    margin:3rem auto 1rem;
+}
+
+.weird-heading{
+
+    color:white;
+
+    font-size:clamp(3rem,6vw,5rem);
+
+    font-weight:700;
+}
+
+.weird-updated{
+
+    color:white;
+
+    opacity:.65;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-top:.5rem;
+}
+
+.weird-divider{
+
+    width:min(90%,1100px);
+
+    height:8px;
+
+    background:#7db0aa;
+
+    margin:0 auto 4rem;
+}
+
+/* ---------- Gallery ---------- */
+
+.weird-grid{
+
+    width:min(92%,1200px);
+
+    margin:0 auto 6rem;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:3rem;
+}
+
+/* ---------- Card ---------- */
+
+.weird-card-link{
+
+    text-decoration:none;
+
+    color:inherit;
+}
+
+.weird-card{
+
+    background:white;
+
+    border:2px solid black;
+
+    box-shadow:10px 10px 0 rgba(0, 0, 0, 0.595);
+
+    overflow:hidden;
+
+    transition:.2s ease;
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+}
+
+.weird-card:hover{
+
+    transform:translate(-6px,-6px);
+
+    box-shadow:16px 16px 0 black;
+}
+
+/* ---------- Image ---------- */
+
+.weird-image-wrapper{
+
+    overflow:hidden;
+
+    aspect-ratio:16/10;
+
+    background:#dcdcdc;
 }
 
 .weird-image{
-    width: 60vw;
-    height: 20vw;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:
+        transform .45s ease,
+        filter .45s ease;
+
+    filter:
+        grayscale(100%)
+        sepia(20%)
+        hue-rotate(25deg)
+        saturate(110%);
 }
 
-.weird-desc{
-    width: 60%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 2vw;
+.weird-card:hover .weird-image{
+
+    transform:scale(1.06);
+
+    filter:none;
 }
 
-.weird-item{
-    width: 80%;
-    color: white;
-    font-weight: 300;
-    margin-bottom: 7vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2.75vw;
+/* ---------- Body ---------- */
+
+.weird-card-body{
+
+    padding:2rem;
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
 }
 
-@media (max-width: 800px) {
-    .weird-item{
-        font-size: 7vw;
-        margin-bottom: 6vh;
+.weird-subtitle{
 
+    font-size:.8rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    color:#888;
+
+    margin-bottom:.8rem;
+}
+
+.weird-title{
+
+    font-size:2rem;
+
+    color:#26857a;
+
+    margin:0 0 1rem;
+
+    transition:.2s;
+}
+
+.weird-card:hover .weird-title{
+
+    transform:scale(1.08);
+}
+
+.weird-preview{
+
+    color:#444;
+
+    line-height:1.7;
+
+    flex:1;
+
+    font-size:1.05rem;
+}
+
+/* ---------- CTA ---------- */
+
+.weird-open{
+
+    margin-top:2rem;
+
+    font-weight:600;
+
+    color:#26857a;
+
+    transition:.2s;
+}
+
+.weird-card:hover .weird-open{
+
+    transform:scale(1.02);
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:800px){
+
+    .weird-grid{
+
+        grid-template-columns:1fr;
+
+        gap:2rem;
     }
-    .weird-desc{
-        width: 95%;
-    }    
+
+    .weird-card{
+
+        box-shadow:6px 6px 0 black;
+    }
+
+    .weird-card:hover{
+
+        transform:none;
+
+        box-shadow:6px 6px 0 black;
+    }
+
+    .weird-card-body{
+
+        padding:1.5rem;
+    }
+
+    .weird-title{
+
+        font-size:1.7rem;
+    }
+
+    .weird-preview{
+
+        font-size:1rem;
+    }
 }

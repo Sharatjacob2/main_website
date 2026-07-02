@@ -1,51 +1,133 @@
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import TitleEffect from "../TitleEffect";
-import {ReactComponent as WeirdF} from './WEIRD f.svg';
-import {ReactComponent as WeirdB} from './WEIRD b.svg';
-import {ReactComponent as WeirdCentre} from './Weird Test Scentre.svg';
-// import {ReactComponent as WeirdLoader} from './Weird Loader.svg';
-// import {ReactComponent as CircleArt} from './CircleArt.svg';
-// import {ReactComponent as FigmaArt} from './FigmaArt.svg';
-// import {ReactComponent as ActualPixelArt} from './ActualPixelArt.svg';
+import { ReactComponent as WeirdF } from "./WEIRD f.svg";
+import { ReactComponent as WeirdB } from "./WEIRD b.svg";
+import { ReactComponent as WeirdCentre } from "./Weird Test Scentre.svg";
 
-import FigmaArt from './FigmaArt.png';
-import CircleArt from './P5Art.png';
-import PixelArt from './PixelArt.png';
-
-
-import './Weird.css';
 import Footer from "../footer/Footer";
+import parseFrontmatter from "../utils/parseFrontmatter";
 
-const WeirdItem = (props) => {
+import "./Weird.css";
 
-    const {svgNames: SvgIcon, description} = props.item;
-    return (
-        <div className="weird-item">
-            <img src={SvgIcon} className="weird-image" alt="images"/>
-            <div className="weird-desc">{description}</div>
-            <div className="project-divider"></div>
+const slugs = [
+  "pixel-art",
+  "p5-experiments",
+  "figma",
+];
+
+const WeirdCard = ({ item }) => {
+  const { slug, title, subtitle, preview, cover } = item;
+
+  return (
+    <Link
+      to={`/weird/${slug}`}
+      className="weird-card-link"
+    >
+      <article className="weird-card">
+
+        <div className="weird-image-wrapper">
+          <img
+            src={`/content/images/${cover}`}
+            alt={title}
+            className="weird-image"
+          />
         </div>
-      );
-}
- 
+
+        <div className="weird-card-body">
+
+          <div className="weird-subtitle">
+            {subtitle}
+          </div>
+
+          <h2 className="weird-title">
+            {title}
+          </h2>
+
+          <p className="weird-preview">
+            {preview}
+          </p>
+
+          <div className="weird-open">
+            Discover ↗
+          </div>
+
+        </div>
+
+      </article>
+    </Link>
+  );
+};
 
 const Weird = () => {
-    const title = {front: WeirdF, back: WeirdB, centre: WeirdCentre, left: 34.906, top: -5.8, width: 30, height: 30};
-    document.body.classList.remove('hide-scrollbars');
-    const weirditems = [
-        {svgNames: PixelArt, description: "a collection of pixel art made by coloring cells in  Google Sheet"},
-        {svgNames: CircleArt, description: "a collection of attempted modern art made with starter code from the p5js docs"},
-        {svgNames: FigmaArt, description: "a collection of digital designs made on Figma under an Unsplash craze"},
-    ]
-    return (
-        <div className="Weird-Page" style={{backgroundColor: '#26857a'}}>
-            <TitleEffect title ={title}/>
-            {weirditems.map((weirditem) => (
-                <WeirdItem item = {weirditem} />
-            ))}
-            <Footer color = {'#7db0aa'}/>
+  document.body.classList.remove("hide-scrollbars");
 
+  const [exhibitions, setExhibitions] = useState([]);
+
+  useEffect(() => {
+    Promise.all(
+      slugs.map(async (slug) => {
+        const response = await fetch(
+          `/content/weird/${slug}.md`
+        );
+
+        const text = await response.text();
+
+        const parsed = parseFrontmatter(text);
+
+        return {
+          slug,
+          ...parsed.metadata,
+        };
+      })
+    ).then((items) => {
+      items.sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+      setExhibitions(items);
+    });
+  }, []);
+
+  const title = {
+    front: WeirdF,
+    back: WeirdB,
+    centre: WeirdCentre,
+    left: 34.906,
+    top: -5.8,
+    width: 30,
+    height: 30,
+  };
+
+  return (
+    <div
+      className="Weird-Page"
+      style={{ backgroundColor: "#26857a" }}
+    >
+      <TitleEffect title={title} />
+
+      <div className="weird-header">
+        <div className="weird-heading">
+          EXHIBITIONS
+        </div>
+
+        <div className="weird-updated">
+          Things I made because they were fun.
+        </div>
+      </div>
+
+      <div className="weird-divider"></div>
+
+      <div className="weird-grid">
+        {exhibitions.map((item) => (
+          <WeirdCard
+            key={item.slug}
+            item={item}
+          />
+        ))}
+      </div>
+
+      <Footer color="#7db0aa" />
     </div>
-      );
-}
- 
+  );
+};
+
 export default Weird;

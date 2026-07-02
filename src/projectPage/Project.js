@@ -11,36 +11,39 @@ import Footer from "../footer/Footer";
 import parseFrontmatter from "../utils/parseFrontmatter";
 
 import "./Project.css";
+import { Link } from "react-router-dom";
 
 function ProjectItem({ item }) {
   return (
-    <div className="project-item">
-      <div className="project-text">
-        <div className="project-title">{item.title}</div>
+    <Link to={`/projects/${item.slug}`}>
+      <div className="project-item">
+        <div className="project-text">
+          <div className="project-title">{item.title}</div>
 
-        <div className="project-subtitle">{item.subtitle}</div>
+          <div className="project-subtitle">{item.subtitle}</div>
 
-        <div className="project-desc">{item.content}</div>
+          <div className="project-desc">{item.content}</div>
 
-        <a
-          href={item.linkref}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-link"
-        >
-          {item.link}
-        </a>
+          <a
+            href={item.linkref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            {item.link}
+          </a>
+        </div>
+        <div className="projects-image-wrapper">
+          <img
+            src={`/content/images/${item.image}`}
+            alt={item.title}
+            className="project-image"
+          />
+        </div>
+
+        <div className="project-divider"></div>
       </div>
-      <div className="projects-image-wrapper">
-        <img
-          src={`/content/images/${item.image}`}
-          alt={item.title}
-          className="project-image"
-        />
-      </div>
-
-      <div className="project-divider"></div>
-    </div>
+    </Link>
   );
 }
 

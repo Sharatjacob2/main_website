@@ -78,7 +78,7 @@ const Blog = () => {
           <BlogItem key={blogitem.slug} item={blogitem} />
         ))}
       </div>
-      <Footer color={"#bce994"} />
+      <Footer color={"#84a26a"} />
     </div>
   );
 };

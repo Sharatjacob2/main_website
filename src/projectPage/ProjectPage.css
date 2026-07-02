@@ -1,40 +1,40 @@
-.post-header {
+.project-header {
     margin-bottom: 3rem;
 }
 
-.post-title {
+.project-title {
     font-size: 3.5rem;
     line-height: 1.1;
     margin-bottom: 0.75rem;
 }
 
-.post-author {
+.project-author {
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
-.post-meta {
+.project-meta {
     color: #666;
     font-size: 0.9rem;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.blog-post-wrapper {
+.project-post-wrapper {
     min-height: 100vh;
     padding: 80px 20px;
-    background-color: #a9b86e;
+    background-color: #984141;
 }
 
-.blog-post {
+.project-post {
     background: rgb(244, 238, 229);
     color: #222;
     box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.9);
     border: 2px solid black;
 }
 
-.blog-post {
+.project-post {
     max-width: 1050px;
     margin: 0 auto;
     padding: 100px 90px 80px;
@@ -45,16 +45,16 @@
 }
 
 /* Main title */
-.blog-post h1 {
+.project-post h1 {
     font-size: 3.5rem;
     margin-bottom: 2rem;
     line-height: 1.1;
     font-weight: 600;
-    color: #828e49;
+    color: #8e5049;
 }
 
 /* Section headings */
-.blog-post h2 {
+.project-post h2 {
     font-size: 2.2rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -64,52 +64,51 @@
 
 }
 
-.blog-post h3 {
+.project-post h3 {
     font-size: 1.6rem;
     margin-top: 2rem;
     margin-bottom: 0.75rem;
 }
 
 /* Paragraphs */
-.blog-post p {
+.project-post p {
     margin-bottom: 1.5rem;
     font-size: 1.4rem;
     font-weight: 375;
 }
 
 /* Links */
-.blog-post a {
-    color: #C5D86D;
+.project-post a {
+    color: black;
     text-decoration: none;
-    border-bottom: 1px solid #C5D86D;
     transition: opacity 0.2s ease;
 }
 
-.blog-post a:hover {
+.project-post a:hover {
     opacity: 0.7;
 }
 
 /* Lists */
-.blog-post ul,
-.blog-post ol {
+.project-post ul,
+.project-post ol {
     margin-bottom: 1.5rem;
     padding-left: 2rem;
 }
 
-.blog-post li {
+.project-post li {
     margin-bottom: 0.5rem;
 }
 
 /* Quotes */
-.blog-post blockquote {
-    border-left: 4px solid #C5D86D;
+.project-post blockquote {
+    border-left: 4px solid #d8766d;
     padding-left: 1.5rem;
     margin: 2rem 0;
     font-style: italic;
 }
 
 /* Inline code */
-.blog-post code {
+.project-post code {
     background: rgba(255, 255, 255, 0.1);
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
@@ -117,7 +116,7 @@
 }
 
 /* Code blocks */
-.blog-post pre {
+.project-post pre {
     background: #1e1e1e;
     padding: 1.25rem;
     border-radius: 12px;
@@ -125,42 +124,42 @@
     margin: 2rem 0;
 }
 
-.blog-post pre code {
+.project-post pre code {
     background: none;
     padding: 0;
 }
 
 /* Images */
-.blog-post img {
+.project-post img {
     width: 100%;
     border-radius: 12px;
     margin: 2rem 0;
 }
 
 /* Tables */
-.blog-post table {
+.project-post table {
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
 }
 
-.blog-post th,
-.blog-post td {
+.project-post th,
+.project-post td {
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0.75rem;
 }
 
-.blog-post th {
+.project-post th {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.blog-post hr {
+.project-post hr {
 
     border: none;
 
     height: 2px;
 
-    background: #cedc7d;
+    background: #dc8d7d;
 
     margin: 3rem 0;
 
@@ -169,16 +168,16 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-    .blog-post {
+    .project-post {
         padding: 80px 25px 60px;
         font-size: 1rem;
     }
 
-    .blog-post h1 {
+    .project-post h1 {
         font-size: 2.5rem;
     }
 
-    .blog-post h2 {
+    .project-post h2 {
         font-size: 1.8rem;
     }
 }

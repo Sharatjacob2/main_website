@@ -1,56 +1,143 @@
-.Resume-Page {
-  min-height: 100%;
-  width: 100%;
-  overflow: hidden;
+.Resume-Page{
+
+    min-height:100vh;
+
+    overflow:hidden;
 }
 
-.downloadtext {
-  display: inline;
-  font-size: 4vw;
-  font-weight: 300;
+/* ---------- Meta ---------- */
+
+.resume-meta{
+
+    width:min(900px,92%);
+
+    margin:1rem auto .75rem;
+
+    text-align:center;
+
+    color:white;
+
+    opacity:.75;
+
+    font-size:.9rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
 }
 
-.download-button {
-  padding: 4vh 5vh;
-  background-color: black;
-  stroke: none;
-  color: white;
-  opacity: 50%;
-  border-radius: 2vh;
-  /* top: 10vh; */
-  position: relative;
+/* ---------- Download ---------- */
+
+.resume-download{
+
+    width:fit-content;
+
+    margin:0 auto 4rem;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.8rem;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:1.15rem;
+
+    font-weight:600;
+
+    transition:.2s;
+    background-color: rgba(0, 0, 0, 0.287);
+    padding: 1rem;
 }
 
-.download-icon {
-  margin-right: 1.5vw;
-}
-.download-button:hover {
-  opacity: 75%;
+.resume-download:hover{
+
+    transform:scale(1.05);
+
+    opacity:.8;
 }
 
-.download {
-  display: block;
-  position: relative;
-  /* top: 10vh; */
+.download-icon{
+
+    width:22px;
+
+    height:22px;
 }
 
-.pageone {
-  display: block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 10vh;
-  width: 80%;
-  height: 50%;
-  box-shadow: 10px 10px 0 black;
+/* ---------- Resume Pages ---------- */
+
+.resume-stack{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5rem;
+
+    margin-bottom:6rem;
 }
 
-@media (max-width: 800px) {
-  .pageone {
-    margin-top: 3vh;
-  }
-  .download-icon {
-    width: 4vw;
-    height: 4vw;
-  }
+.resume-page{
+
+    width:min(900px,92%);
+
+    display:block;
+
+    margin:0 auto;
+
+    background:white;
+
+    border:2px solid black;
+
+    box-shadow:12px 12px 0 black;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+.resume-page:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:16px 16px 0 black;
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:800px){
+
+    .resume-download{
+
+        font-size:1rem;
+
+        margin-bottom:2.5rem;
+    }
+
+    .download-icon{
+
+        width:18px;
+
+        height:18px;
+    }
+
+    .resume-stack{
+
+        gap:2rem;
+    }
+
+    .resume-page{
+
+        box-shadow:6px 6px 0 black;
+    }
+
+    .resume-page:hover{
+
+        transform:none;
+
+        box-shadow:6px 6px 0 black;
+    }
 }

@@ -8,6 +8,9 @@ import { ReactComponent as WeirdCentre } from "./Weird Test Scentre.svg";
 
 import Footer from "../footer/Footer";
 import parseFrontmatter from "../utils/parseFrontmatter";
+import PageHeader from "../utils/PageHeader";
+
+
 
 import "./Weird.css";
 
@@ -103,18 +106,11 @@ const Weird = () => {
       style={{ backgroundColor: "#26857a" }}
     >
       <TitleEffect title={title} />
-
-      <div className="weird-header">
-        <div className="weird-heading">
-          EXHIBITIONS
-        </div>
-
-        <div className="weird-updated">
-          Things I made because they were fun.
-        </div>
-      </div>
-
-      <div className="weird-divider"></div>
+      <PageHeader
+        title="EXHIBITIONS"
+        subtitle="Stuff I Made to Mess Around"
+        accentColor="#74c6b0"
+      />
 
       <div className="weird-grid">
         {exhibitions.map((item) => (

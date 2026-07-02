@@ -9,6 +9,10 @@ import { ReactComponent as ProjectCentre } from "./Projects Centre.svg";
 import Footer from "../footer/Footer";
 
 import parseFrontmatter from "../utils/parseFrontmatter";
+import PageHeader from "../utils/PageHeader";
+
+
+
 
 import "./Project.css";
 import { Link } from "react-router-dom";
@@ -94,13 +98,11 @@ function Project() {
   return (
     <div className="Projects-Page" style={{ backgroundColor: "#8d2835" }}>
       <TitleEffect title={title} />
-      <div className="about-header">
-        <div className="about-heading">ALL OF MY WORKS.</div>
-
-        <div className="about-updated">Last revised · July 2026</div>
-      </div>
-
-      <div className="projects-divider" />
+      <PageHeader
+        title="ALL OF MY WORKS."
+        subtitle="Last revised · July 2026"
+        accentColor="#d95142"
+      />
       {projects.map((project) => (
         <ProjectItem key={project.slug} item={project} />
       ))}

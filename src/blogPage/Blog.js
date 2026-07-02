@@ -7,6 +7,8 @@ import "./Blog.css";
 import Footer from "../footer/Footer";
 import { Link } from "react-router-dom";
 import parseFrontmatter from "../utils/parseFrontmatter";
+import PageHeader from "../utils/PageHeader";
+
 
 const slugs = [
   "lethality-human-feedback",
@@ -71,14 +73,18 @@ const Blog = () => {
   return (
     <div className="Blog-Page" style={{ backgroundColor: "#9dae4d" }}>
       <TitleEffect className="title-margin" title={title} />
-      <div className="blog-main-title">POSTS</div>
-      <div className="blog-main-title-underline"></div>
+      <PageHeader
+        title="THOUGHTS & OPINIONS"
+        subtitle="A Penny for my Head."
+        accentColor="#a8c779"
+      />
+            <div className="blog-main-title-underline"></div>
       <div className="blog-grid">
         {blogitems.map((blogitem) => (
           <BlogItem key={blogitem.slug} item={blogitem} />
         ))}
       </div>
-      <Footer color={"#84a26a"} />
+      <Footer color={"#8ba26a"} />
     </div>
   );
 };

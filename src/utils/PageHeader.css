@@ -1,0 +1,37 @@
+.page-header{
+
+    width:min(90%,1100px);
+
+    margin:3rem auto 1rem;
+}
+
+.page-heading{
+
+    color:white;
+
+    font-size:clamp(3rem,6vw,5rem);
+
+    font-weight:700;
+}
+
+.page-subtitle{
+
+    color:white;
+
+    opacity:.65;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-top:.5rem;
+}
+
+.page-divider{
+
+    width:min(90%,1100px);
+
+    height:8px;
+
+    margin:0 auto 4rem;
+}

@@ -18,7 +18,7 @@ const WelcomePage = () => {
 
     const selectors = [
         { title: "projects", color: '#b9283b', svgName: ProjectImage, id: 1 },
-        { title: "cv&resume", color: '#b34c30', svgName: ResumeImage, id: 2 },
+        { title: "resume", color: '#b34c30', svgName: ResumeImage, id: 2 },
         { title: "about", color: '#2f2a4d', svgName: AboutImage, id: 3 },
         { title: "weird", color: '#109789', svgName: WeirdImage, id: 4 },
         { title: "blog", color: '#acbc64', svgName: WriteImage, id: 5 }

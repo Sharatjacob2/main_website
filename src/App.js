@@ -21,7 +21,7 @@ function App() {
       <Routes>
         <Route index element={<ResponsiveComponent />} />
         <Route path="/about" element={<About />} />
-        <Route path="/cv&resume" element={<Resume />} />
+        <Route path="/resume" element={<Resume />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/projects/:slug" element={<ProjectPage />} />
         <Route path="/weird" element={<Weird />} />

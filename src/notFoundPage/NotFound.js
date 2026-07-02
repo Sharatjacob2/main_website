@@ -39,7 +39,7 @@ const NotFound = () => {
 
           <Link to="/weird">Weird</Link>
 
-          <Link to="/cv&resume">Resume</Link>
+          <Link to="/resume">Resume</Link>
 
         </div>
 

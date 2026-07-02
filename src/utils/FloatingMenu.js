@@ -14,7 +14,7 @@ function FloatingMenu() {
     { path: "/projects", label: "PROJECTS" },
     { path: "/weird", label: "WEIRD" },
     { path: "/blog", label: "BLOG" },
-    { path: "/cv&resume", label: "RESUME" },
+    { path: "/resume", label: "RESUME" },
   ];
 
   return (

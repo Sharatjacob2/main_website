@@ -141,3 +141,41 @@
         box-shadow:6px 6px 0 black;
     }
 }
+
+
+.resume-document{
+    max-width: 1000px;
+    margin: 4rem auto 8rem;
+    padding: 5rem;
+
+    background:#f4eee5;
+
+    color:#222;
+
+    border:2px solid black;
+
+    box-shadow:12px 12px 0 black;
+
+    text-align:left;
+
+    line-height:1.8;
+}
+
+.resume-document h1{
+    font-size:3rem;
+    margin-bottom:2rem;
+}
+
+.resume-document h2{
+    margin-top:3rem;
+    margin-bottom:1rem;
+
+    color:#9d492e;
+
+    border-bottom:2px solid #e08257;
+}
+
+.resume-document p,
+.resume-document li{
+    font-size:1.2rem;
+}

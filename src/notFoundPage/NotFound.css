@@ -1,0 +1,100 @@
+.NotFound-Page{
+
+    min-height:100vh;
+
+    background:#596b8d;
+
+    overflow:hidden;
+}
+
+.notfound-card{
+
+    width:min(900px,90%);
+
+    margin:5rem auto 8rem;
+
+    background:#f4eee5;
+
+    border:2px solid black;
+
+    box-shadow:12px 12px 0 black;
+
+    padding:4rem;
+
+    text-align:left;
+
+    color:#222;
+}
+
+.notfound-card p{
+
+    font-size:1.4rem;
+
+    line-height:1.8;
+
+    margin-bottom:1.5rem;
+}
+
+.notfound-links{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:1rem;
+
+    margin-top:3rem;
+}
+
+.notfound-links a{
+
+    display:block;
+
+    padding:1rem 1.25rem;
+
+    border:2px solid black;
+
+    background:rgb(151, 173, 195);
+
+    color:black;
+
+    text-decoration:none;
+
+    box-shadow:6px 6px 0 black;
+
+    transition:.18s;
+}
+
+.notfound-links a:hover{
+
+    transform:translate(-3px,-3px);
+
+    box-shadow:9px 9px 0 black;
+}
+
+.notfound-note{
+
+    margin-top:3rem;
+
+    opacity:.65;
+
+    font-style:italic;
+}
+
+@media(max-width:800px){
+
+    .notfound-card{
+
+        padding:2rem;
+    }
+
+    .notfound-links{
+
+        grid-template-columns:1fr;
+    }
+
+    .notfound-card p{
+
+        font-size:1.1rem;
+    }
+}

@@ -2,7 +2,7 @@
 title: P5.js Experiments
 subtitle: Generative sketches
 preview: Modern-art inspired creations from the most basic p5 program.
-cover: bad-photos.png
+cover: lethality-human-feedback.png
 order: 2
 ---
 

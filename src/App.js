@@ -11,6 +11,7 @@ import ResponsiveComponent from "./ResponsiveTree";
 import BlogPost from "./blogPage/BlogPost";
 import FloatingMenu from "./utils/FloatingMenu.js";
 import ScrollToTop from "./utils/ScrollToTop";
+import NotFound from "./notFoundPage/NotFound";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/weird/:slug" element={<WeirdPost />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

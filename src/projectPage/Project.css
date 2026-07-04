@@ -1,236 +1,256 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .Projects-Page {
-    min-height: 100vh;
-    overflow: hidden;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 /* ---------- Project Card ---------- */
 
 .project-item {
+  width: min(85%, 1200px);
 
-    width: min(85%, 1200px);
+  margin: 4rem auto;
 
-    margin: 4rem auto;
+  padding: clamp(2rem, 4vw, 4rem);
 
-    padding: clamp(2rem, 4vw, 4rem);
+  background: #e5e5e5;
 
-    background: #e5e5e5;
+  border: 2px solid black;
 
-    border: 2px solid black;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.25);
 
-    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.253);
+  display: flex;
 
-    display: flex;
+  align-items: center;
 
-    justify-content: space-between;
+  gap: 3rem;
 
-    align-items: center;
-
-    gap: 3rem;
-
-    transition: .18s ease;
+  transition: 0.18s ease;
 }
 
 .project-item:hover {
+  transform: translateY(-6px);
 
-    transform: translateY(-6px);
-
-    box-shadow: 16px 16px 0 rgba(0, 0, 0, 0.409);
+  box-shadow: 16px 16px 0 rgba(0, 0, 0, 0.4);
 }
 
 /* ---------- Text ---------- */
 
 .project-text {
+  flex: 1;
 
-    flex: 1;
+  min-width: 0;
 
-    text-align: left;
+  text-align: left;
 
-    color: black;
+  color: black;
 }
 
 .project-title {
+  font-size: clamp(2.4rem, 4vw, 4.5rem);
 
-    font-size: clamp(2.4rem, 4vw, 4.5rem);
+  font-weight: 500;
 
-    font-weight: 500;
+  margin-bottom: 0.35rem;
 
-    margin-bottom: .35rem;
+  transition: 0.2s;
 
-    transition: .2s;
+  word-break: break-word;
 }
 
 .project-item:hover .project-title {
-
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .project-subtitle {
+  font-size: clamp(1rem, 1.3vw, 1.5rem);
 
-    font-size: clamp(1rem, 1.3vw, 1.5rem);
+  opacity: 0.7;
 
-    opacity: .7;
+  text-transform: uppercase;
 
-    text-transform: uppercase;
+  letter-spacing: 2px;
 
-    letter-spacing: 2px;
-
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .project-desc {
+  font-size: clamp(1.1rem, 1.1vw, 1.45rem);
 
-    font-size: clamp(1.1rem, 1.1vw, 1.45rem);
+  font-weight: 350;
 
-    font-weight: 350;
+  line-height: 1.8;
 
-    line-height: 1.8;
+  max-width: 60ch;
 
-    max-width: 60ch;
-
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
+/* ---------- Button ---------- */
+
 .project-link {
+  display: inline-block;
 
-    display: inline-block;
+  padding: 0.8rem 1.2rem;
 
-    padding: .8rem 1.2rem;
+  border: 2px solid black;
 
-    border: 2px solid black;
+  background: rgb(248, 170, 170);
 
-    background: rgb(248, 170, 170);
+  color: black;
 
-    color: black;
+  text-decoration: none;
 
-    text-decoration: none;
+  box-shadow: 4px 4px 0 black;
 
-    box-shadow: 4px 4px 0 black;
+  transition: 0.18s ease;
 
-    transition: .18s ease;
-
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .project-link:hover {
+  transform: translate(-2px, -2px);
 
-    transform: translate(-2px, -2px);
-
-    box-shadow: 6px 6px 0 black;
+  box-shadow: 6px 6px 0 black;
 }
 
 /* ---------- Illustration ---------- */
 
-.projects-image-wrapper{
-  width: 30%;
+.projects-image-wrapper {
+  flex: 0 0 30%;
+
   aspect-ratio: 10 / 12;
+
   overflow: hidden;
+
   border-radius: 12px;
 }
 
-
 .project-image {
   width: 100%;
+
   height: 100%;
+
   object-fit: cover;
+
   display: block;
-  transition: .25s ease;
+
+  transition: transform 0.25s ease;
 }
 
-.project-item:hover .project-image{
-    transform: scale(1.05);
+.project-item:hover .project-image {
+  transform: scale(1.05);
 }
 
 /* ---------- Divider ---------- */
 
 .project-divider {
+  display: none;
+}
 
-    display: none;
+/* ---------- Header ---------- */
+
+.about-header {
+  width: min(90%, 1100px);
+
+  margin: 3rem auto 1rem;
+}
+
+.about-heading {
+  color: white;
+
+  font-size: clamp(3rem, 6vw, 5rem);
+
+  font-weight: 700;
+}
+
+.about-updated {
+  color: white;
+
+  opacity: 0.6;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+
+  margin-top: 0.5rem;
+}
+
+.projects-divider {
+  width: min(90%, 1100px);
+
+  height: 8px;
+
+  background: #c67474;
+
+  margin: 0 auto 4rem;
 }
 
 /* ---------- Mobile ---------- */
 
-.about-header {
-    width: min(90%, 1100px);
-    margin: 3rem auto 1rem;
-}
-
-.about-heading {
-    color: white;
-    font-size: clamp(3rem, 6vw, 5rem);
-    font-weight: 700;
-}
-
-.about-updated {
-    color: white;
-    opacity: 0.6;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 0.5rem;
-}
-
-.projects-divider {
-    width: min(90%, 1100px);
-    height: 8px;
-    background: #c67474;
-    margin: 0 auto 4rem;
-}
-
-
 @media (max-width: 900px) {
+  .project-item {
+    width: 92%;
 
-    .project-item {
+    padding: 1.75rem;
 
-        flex-direction: column-reverse;
+    flex-direction: column-reverse;
 
-        align-items: flex-start;
+    align-items: stretch;
 
-        gap: 2rem;
+    gap: 1.75rem;
 
-        padding: 2rem;
+    box-shadow: 6px 6px 0 black;
+  }
 
-        width: 88%;
+  .project-item:hover {
+    transform: none;
 
-        box-shadow: 6px 6px 0 black;
-    }
+    box-shadow: 6px 6px 0 black;
+  }
 
-    .project-item:hover {
+  .project-text {
+    width: 100%;
 
-        transform: none;
-        box-shadow: 6px 6px 0 black;
-    }
+    min-width: 0;
+  }
 
-    .project-image {
+  .project-title {
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
 
-        width: min(75vw, 320px);
-        align-self: center;
-    }
+    word-break: break-word;
+  }
 
-    .project-title {
+  .project-subtitle {
+    font-size: 0.85rem;
 
-        font-size: 2rem;
-    }
+    letter-spacing: 1px;
 
-    .project-subtitle {
+    margin-bottom: 1.25rem;
+  }
 
-        font-size: .95rem;
-    }
+  .project-desc {
+    font-size: 1rem;
 
-    .project-desc {
+    max-width: 100%;
+  }
 
-        font-size: 1.05rem;
-        max-width: 100%;
-    }
+  .projects-image-wrapper {
+    flex: none;
 
-    .project-link {
+    width: min(80vw, 320px);
 
-        width: 100%;
-        text-align: center;
-    }
+    align-self: center;
+  }
+
+  .project-link {
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+  }
 }
-
-
-

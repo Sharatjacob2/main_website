@@ -11,23 +11,14 @@
 .content-page {
     max-width: 1050px;
     margin: 0 auto;
-
     padding: 100px 90px 80px;
-
-    background: rgb(244,238,229);
-
+    background: #f4eee5;
     color: #222;
-
     border: 2px solid black;
-
-    box-shadow: 12px 12px 0 rgba(0,0,0,.9);
-
+    box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.354);
     font-family: Georgia, serif;
-
     line-height: 1.8;
-
     font-size: 1.15rem;
-
     text-align: left;
 }
 
@@ -76,7 +67,7 @@
 .content-page p{
     margin-bottom:1.5rem;
     font-size:1.4rem;
-    font-weight:375;
+    font-weight:350;
 }
 
 .content-page ul,
@@ -169,11 +160,11 @@
 
 .content-page img{
 
-    width:100%;
+    /* width:100%; */
 
     border-radius:12px;
 
-    margin:2rem 0;
+    /* margin:2rem 0; */
 }
 
 /* ---------- Tables ---------- */

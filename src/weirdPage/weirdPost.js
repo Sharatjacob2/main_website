@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import "./weirdPost.css";
 import parseFrontmatter from "../utils/parseFrontmatter";
 import Footer from "../footer/Footer";
+import "../utils/ContentPage.css";
 
 function WeirdPost() {
   const { slug } = useParams();
@@ -27,8 +28,8 @@ function WeirdPost() {
 
   return (
     <>
-      <div className="weirds-post-wrapper">
-        <div className="weirds-post">
+      <div className="weirds-post-wrapper content-page-wrapper">
+        <div className="content-page weird-content-page">
           <div className="weirds-hero">
             <img
               src={`/content/images/${metadata.cover}`}
@@ -36,27 +37,19 @@ function WeirdPost() {
               className="weirds-cover"
             />
           </div>
+          <div className="weird-content-body">
+            <div className="content-header">
+              <div className="weirds-exhibition">
+                EXHIBITION {metadata.order}
+              </div>
 
-          <div className="weirds-header">
-            <div className="weirds-exhibition">EXHIBITION {metadata.order}</div>
+              <h1 className="content-title">{metadata.title}</h1>
 
-            <h1 className="weirds-title">{metadata.title}</h1>
+              <div className="content-subtitle">{metadata.subtitle}</div>
+            </div>
 
-            <div className="weirds-subtitle">{metadata.subtitle}</div>
-
-            {metadata.link && (
-              <a
-                href={metadata.linkref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="weirds-link"
-              >
-                {metadata.link} ↗
-              </a>
-            )}
+            <ReactMarkdown>{content}</ReactMarkdown>
           </div>
-
-          <ReactMarkdown>{content}</ReactMarkdown>
         </div>
       </div>
       <Footer color={"#6aa28f"} />

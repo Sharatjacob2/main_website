@@ -1,266 +1,87 @@
 /* ---------- Hero ---------- */
 
 .weirds-hero {
-  margin: -40px -90px 5rem;
+  margin: 0;
   overflow: hidden;
-  height: 55vh;
-  border-radius: 0px 12px;
-    height: clamp(220px, 40vw, 550px);
-}
 
+  height: clamp(260px, 45vw, 520px);
 
-/* Mobile */
-@media (max-width: 768px) {
-  .weirds-hero {
-    margin: -20px -25px 3rem;
-    height: 260px;
-  }
+  border-radius: 0;
 }
 
 .weirds-cover {
   width: 100%;
-
-  height: 55vh;
-
-  object-fit: cover;
+  height: 100%;
 
   display: block;
 
-  filter: grayscale(100%) sepia(25%) hue-rotate(35deg) saturate(110%);
+  object-fit: fit;
+  object-position: center;
 
-  transition: 0.45s;
+  background: #111;
+
+  filter: grayscale(100%)
+          sepia(25%)
+          hue-rotate(35deg)
+          saturate(110%);
+
+  transition:
+      transform .45s ease,
+      filter .45s ease;
 }
 
 .weirds-cover:hover {
   filter: none;
-
-  transform: scale(1.01);
+  transform: scale(1.03);
 }
 
+/* ---------- Exhibition ---------- */
 
 .weirds-exhibition {
   font-size: 0.8rem;
-
-  letter-spacing: 4px;
-
-  text-transform: uppercase;
-
-  opacity: 0.45;
-
   font-weight: 700;
 
-  margin-bottom: 1rem;
-}
-
-.weirds-title {
-  font-size: clamp(3.5rem, 6vw, 6rem);
-
-  line-height: 0.95;
-
-  margin-bottom: 1rem;
-
-  color: #26857a;
-}
-
-.weirds-subtitle {
-  font-size: 1.35rem;
-
-  color: #666;
-
-  margin-bottom: 2rem;
-}
-
-.weirds-link {
-  display: inline-block;
-
-  text-decoration: none;
-
-  color: #26857a;
-
-  font-weight: 600;
-
-  transition: 0.2s;
-}
-
-.weirds-link:hover {
-  transform: translateX(8px);
-}
-
-.weirds-author {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-
-.weirds-meta {
-  color: #666;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
+  letter-spacing: 4px;
   text-transform: uppercase;
+
+  opacity: .45;
+
+  margin-bottom: 1rem;
 }
+
+/* ---------- Theme ---------- */
 
 .weirds-post-wrapper {
-  min-height: 100vh;
-  padding: 80px 20px;
-  background-color: #419888;
+  --page-bg: #26857a;
+
+  --accent: #2f7b71;
+  --accent-dark: #296a61;
+  --accent-light: #5fb3a8;
+
+  --link: black;
 }
 
-.weirds-post {
-  background: #f5f1e8;
-  max-width: 1050px;;
+/* ---------- Weird Layout ---------- */
 
-  background-image: radial-gradient(rgba(0, 0, 0, 0.025) 1px, transparent 1px);
-
-  background-size: 18px 18px;
-  color: #222;
-  box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.9);
-  border: 2px solid black;
-  border-radius: 0px 12px;
-}
-
-.weirds-post {
-  max-width: 1200px;
-
-  padding: 0 90px 90px;
-  margin: 0 auto;
-  font-family: Georgia, serif;
-  line-height: 1.8;
-  font-size: 1.15rem;
-  text-align: left;
-}
-
-/* Main title */
-.weirds-post h1 {
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
-  line-height: 1.1;
-  font-weight: 600;
-  color: #498e81;
-}
-
-/* Section headings */
-.weirds-post h2 {
-  font-size: 2.2rem;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #828e49;
-  padding-bottom: 0.5rem;
-  color: #6b753b;
-}
-
-.weirds-post h3 {
-  font-size: 1.6rem;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
-}
-
-/* Paragraphs */
-.weirds-post p {
-  margin-bottom: 1.5rem;
-  font-size: 1.4rem;
-  font-weight: 375;
-}
-
-/* Links */
-.weirds-post a {
-  color: black;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-}
-
-.weirds-post a:hover {
-  opacity: 0.7;
-}
-
-/* Lists */
-.weirds-post ul,
-.weirds-post ol {
-  margin-bottom: 1.5rem;
-  padding-left: 2rem;
-}
-
-.weirds-post li {
-  margin-bottom: 0.5rem;
-}
-
-/* Quotes */
-.weirds-post blockquote {
-  border-left: 4px solid #d8766d;
-  padding-left: 1.5rem;
-  margin: 2rem 0;
-  font-style: italic;
-}
-
-/* Inline code */
-.weirds-post code {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  font-family: monospace;
-}
-
-/* Code blocks */
-.weirds-post pre {
-  background: #1e1e1e;
-  padding: 1.25rem;
-  border-radius: 12px;
-  overflow-x: auto;
-  margin: 2rem 0;
-}
-
-.weirds-post pre code {
-  background: none;
+.weird-content-page {
   padding: 0;
 }
 
-/* Images */
-.weirds-post img {
-  width: 100%;
-  border-radius: 12px;
-  margin: 2rem 0;
+.weird-content-body {
+  padding: 100px 90px 80px;
 }
 
-/* Tables */
-.weirds-post table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-}
+/* ---------- Mobile ---------- */
 
-.weirds-post th,
-.weirds-post td {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.75rem;
-}
+@media (max-width:768px) {
 
-.weirds-post th {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.weirds-post hr {
-  border: none;
-
-  height: 2px;
-
-  background: #dc8d7d;
-
-  margin: 3rem 0;
-
-  opacity: 0.8;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .weirds-post {
-    padding: 80px 25px 60px;
-    font-size: 1rem;
+  .weirds-hero {
+    margin: 0 0 2rem;
+    height: 220px;
   }
 
-  .weirds-post h1 {
-    font-size: 2.5rem;
+  .weird-content-body {
+    padding: 48px 22px 40px;
   }
 
-  .weirds-post h2 {
-    font-size: 1.8rem;
-  }
 }

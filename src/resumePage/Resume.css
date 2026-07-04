@@ -92,7 +92,7 @@
 
     border:2px solid black;
 
-    box-shadow:12px 12px 0 black;
+    box-shadow:12px 12px 0 rgba(0, 0, 0, 0.333);
 
     transition:
         transform .2s ease,
@@ -103,7 +103,7 @@
 
     transform:translateY(-5px);
 
-    box-shadow:16px 16px 0 black;
+    box-shadow:16px 16px 0 rgba(0, 0, 0, 0.614);
 }
 
 /* ---------- Mobile ---------- */

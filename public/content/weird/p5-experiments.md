@@ -1,6 +1,6 @@
 ---
 title: P5.js Experiments
-subtitle: Generative sketches
+subtitle: Generative Strolls
 preview: Modern-art inspired creations from the most basic p5 program.
 cover: lethality-human-feedback.png
 order: 2

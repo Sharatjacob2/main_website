@@ -1,6 +1,6 @@
 ---
 title: Figma Studies
-subtitle: Unsplash era
+subtitle: Marble Era
 preview: Using stock marble and random shapes to tell a story.
 cover: bad-photos.png
 order: 3

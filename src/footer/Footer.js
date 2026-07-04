@@ -37,7 +37,7 @@ return (
         </div>
 
         <div className="footer-signature">
-            emergent complexity • alignment • cooperative strategies
+            emergence • alignment • cooperation
         </div>
 
         <div className="footer-icons">

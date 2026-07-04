@@ -1,57 +1,51 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
-import './BlogPost.css';
+import "./BlogPost.css";
+import "../utils/ContentPage.css";
 import parseFrontmatter from "../utils/parseFrontmatter";
+import Footer from "../footer/Footer";
 
 function BlogPost() {
-    const { slug } = useParams();
+  const { slug } = useParams();
 
-    const [content, setContent] = useState("");
-    const [metadata, setMetadata] = useState({});
+  const [content, setContent] = useState("");
+  const [metadata, setMetadata] = useState({});
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [slug]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
 
-    useEffect(() => {
-        fetch(`/content/posts/${slug}.md`)
-            .then(res => res.text())
-            .then(text => {
-                const parsed = parseFrontmatter(text);
-                setMetadata(parsed.metadata);
-                setContent(parsed.content);
-            });
+  useEffect(() => {
+    fetch(`/content/posts/${slug}.md`)
+      .then((res) => res.text())
+      .then((text) => {
+        const parsed = parseFrontmatter(text);
+        setMetadata(parsed.metadata);
+        setContent(parsed.content);
+      });
+  }, [slug]);
 
-            
-    }, [slug]);
+  return (
+    <>
+      <div className="blog-post-wrapper content-page-wrapper">
+        <div className="content-page">
+          <div className="content-header">
+            <h1 className="content-title">{metadata.title}</h1>
 
-    return (
-        <div className="blog-post-wrapper">
-            <div className="blog-post">
-                <div className="post-header">
+            <div className="content-author">By {metadata.author}</div>
 
-                    <h1 className="post-title">
-                        {metadata.title}
-                    </h1>
-
-                    <div className="post-author">
-                        By {metadata.author}
-                    </div>
-
-                    <div className="post-meta">
-                        {metadata.date} • {metadata.readingTime} minute read
-                    </div>
-
-                </div>
-
-                <ReactMarkdown>
-                    {content}
-                </ReactMarkdown>
+            <div className="content-meta">
+              {metadata.date} • {metadata.readingTime} minute read
             </div>
-        </div>
+          </div>
 
-    );
+          <ReactMarkdown>{content}</ReactMarkdown>
+        </div>
+      </div>
+      <Footer color={"#8ba26a"} />
+    </>
+  );
 }
 
 export default BlogPost;

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import "./weirdPost.css";
 import parseFrontmatter from "../utils/parseFrontmatter";
+import Footer from "../footer/Footer";
 
 function WeirdPost() {
   const { slug } = useParams();
@@ -25,15 +26,16 @@ function WeirdPost() {
   }, [slug]);
 
   return (
-    <div className="weirds-post-wrapper">
-      <div className="weirds-post">
-        <div className="weirds-hero">
-          <img
-            src={`/content/images/${metadata.cover}`}
-            alt={metadata.title}
-            className="weirds-cover"
-          />
-        </div>
+    <>
+      <div className="weirds-post-wrapper">
+        <div className="weirds-post">
+          <div className="weirds-hero">
+            <img
+              src={`/content/images/${metadata.cover}`}
+              alt={metadata.title}
+              className="weirds-cover"
+            />
+          </div>
 
           <div className="weirds-header">
             <div className="weirds-exhibition">EXHIBITION {metadata.order}</div>
@@ -54,9 +56,11 @@ function WeirdPost() {
             )}
           </div>
 
-        <ReactMarkdown>{content}</ReactMarkdown>
+          <ReactMarkdown>{content}</ReactMarkdown>
+        </div>
       </div>
-    </div>
+      <Footer color={"#6aa28f"} />
+    </>
   );
 }
 

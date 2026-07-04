@@ -52,23 +52,32 @@
     height: 70vh;
 }
 
-.mobile-explore{
-    width: 30vw;
-    height: 4vh;
-    background-color: white;
-    color: #1B998B;
+.mobile-explore {
     position: absolute;
-    bottom: 6vh;
+
     left: 50%;
+    bottom: 6vh;
+
     transform: translateX(-50%);
-    z-index: 6;
-    font-size: 6vw;
-    padding: 3vw;
+
+    width: clamp(170px, 42vw, 250px);
+
+    padding: 0.9rem 1.4rem;
+
+    background: white;
+
+    color: #1B998B;
+
+    text-align: center;
+
+    font-size: clamp(1rem, 4vw, 1.4rem);
+
     font-weight: 350;
+    box-shadow: 6px 6px 0 black;
+
+    z-index: 6;
 }
 
-.mobile-explore#p{
-    position: absolute;
-    top: 50%;
-    transform: translateX(-50%);
+.mobile-explore p {
+    margin: 0;
 }

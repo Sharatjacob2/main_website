@@ -1,6 +1,6 @@
 # The Artist
 
-When we look at the story of Oppenheimer and the Atomic Bomb, there's many fascinating aspects to dissect, one of which is relevant to this text. They weren't chemists, or physicists or mathematicians. They were general scientists who happened to also know have a stronger inclination to one field over the other. On top of that, they tok an active interest in philosophy and politics, and were in many senses, an active participant in the world. This attracts me heavily.
+When we look at the story of Oppenheimer and the Atomic Bomb, there's many fascinating aspects to dissect, one of which is relevant to this text. They weren't chemists, or physicists or mathematicians. They were general scientists who happened to also have a stronger inclination to one field over the other. On top of that, they took an active interest in philosophy and politics, and were in many senses, an active participant in the world. This attracts me heavily.
 
 The older definition of what constituted a scientist wasn’t limited to a single discipline, but one that interested themselves in subjects across various studies, across physics, math, chemistry, and beyond. I have fancied a similar description for artists, not limited by their medium, but only by their minds. I think that when we refer to the creative arts, we only consider writing, drawing, acting, etc. 
 

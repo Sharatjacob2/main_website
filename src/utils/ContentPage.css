@@ -14,7 +14,9 @@
     padding: 100px 90px 80px;
     background: #f4eee5;
     color: #222;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+        border-radius: 2px;
+
     box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.354);
     font-family: Georgia, serif;
     line-height: 1.8;
@@ -85,22 +87,16 @@
 .content-link {
 
     display: inline-block;
-
     padding: .8rem 1.2rem;
-
-    border: 2px solid black;
-
+    /* border: 2px solid black; */
+    border-radius: 2px;
     background: var(--link-bg);
-
-    color: black;
-
+    color: white;
     text-decoration: none;
-
-    box-shadow: 4px 4px 0 black;
-
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.724);
     transition: .18s ease;
-
     font-weight: 500;
+    margin-top: 0.5rem;
 }
 
 .content-link:hover {

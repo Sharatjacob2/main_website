@@ -19,7 +19,6 @@ import { Link } from "react-router-dom";
 
 function ProjectItem({ item }) {
   return (
-    <Link to={`/projects/${item.slug}`}>
       <div className="project-item">
         <div className="project-text">
           <div className="project-title">{item.title}</div>
@@ -28,14 +27,9 @@ function ProjectItem({ item }) {
 
           <div className="project-desc">{item.description}</div>
 
-          <a
-            href={item.linkref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-link"
-          >
-            {item.link}
-          </a>
+    <Link to={`/projects/${item.slug}`} className="project-link">
+            Read More →
+    </Link>
         </div>
         <div className="projects-image-wrapper">
           <img
@@ -47,7 +41,6 @@ function ProjectItem({ item }) {
 
         <div className="project-divider"></div>
       </div>
-    </Link>
   );
 }
 

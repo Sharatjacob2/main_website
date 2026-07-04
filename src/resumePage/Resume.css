@@ -89,8 +89,9 @@
     margin:0 auto;
 
     background:white;
+    border-radius: 2px;
 
-    border:2px solid black;
+    /* border:2px solid black; */
 
     box-shadow:12px 12px 0 rgba(0, 0, 0, 0.333);
 

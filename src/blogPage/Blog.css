@@ -5,7 +5,7 @@
 }
 
 .blog-item {
-  background: white;
+  background: #f4eee5;
 
   padding: 2rem;
 
@@ -14,7 +14,7 @@
 
   /* border: 2px solid black; */
   box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.368);
-
+  border-radius: 2px;
   transition: 0.2s ease;
 
   color: black;
@@ -113,7 +113,7 @@ a {
 
   overflow: hidden;
 
-  border-radius: 12px;
+  border-radius: 4px;
 }
 
 .blog-image {

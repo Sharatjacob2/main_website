@@ -5,6 +5,7 @@ import "./weirdPost.css";
 import parseFrontmatter from "../utils/parseFrontmatter";
 import Footer from "../footer/Footer";
 import "../utils/ContentPage.css";
+import { Link } from "react-router-dom";
 
 function WeirdPost() {
   const { slug } = useParams();
@@ -29,6 +30,9 @@ function WeirdPost() {
   return (
     <>
       <div className="weirds-post-wrapper content-page-wrapper">
+        <Link to="/weird" className="back-button">
+          ← Back to Weird
+        </Link>
         <div className="content-page weird-content-page">
           <div className="weirds-hero">
             <img

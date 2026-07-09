@@ -30,6 +30,13 @@ function WeirdPost() {
   return (
     <>
       <div className="weirds-post-wrapper content-page-wrapper">
+        <div
+          className="weirds-bg"
+          style={{
+            backgroundImage: `url(/content/images/${metadata.cover})`,
+          }}
+        />
+        <div className="weirds-overlay" />
         <Link to="/weird" className="back-button">
           ← Back to Weird
         </Link>

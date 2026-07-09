@@ -52,6 +52,8 @@
 /* ---------- Theme ---------- */
 
 .weirds-post-wrapper {
+      position: relative;
+    overflow: hidden;
   --page-bg: #26857a;
 
   --accent: #2f7b71;
@@ -59,6 +61,41 @@
   --accent-light: #5fb3a8;
 
   --link: black;
+}
+
+.weirds-bg{
+    position:absolute;
+    inset:0;
+
+    background-size:cover;
+    background-position:center;
+
+    transform:scale(1.08);
+
+    filter:
+        blur(28px)
+        grayscale(100%)
+        saturate(120%);
+
+    z-index:0;
+}
+
+.weirds-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            rgba(22,90,72,.45),
+            rgba(28,110,88,.65)
+        );
+
+    mix-blend-mode: multiply;
+}
+
+.content-page{
+    position:relative;
+    z-index:1;
 }
 
 /* ---------- Weird Layout ---------- */

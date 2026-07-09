@@ -1,142 +1,139 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .About-Page {
-    min-height: 100vh;
-    overflow: hidden;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 /* ---------- Header ---------- */
 
 .about-header {
-    width: min(90%, 1100px);
-    margin: 3rem auto 1rem;
+  width: min(90%, 1100px);
+  margin: 3rem auto 1rem;
 }
 
 .about-heading {
-    color: white;
-    font-size: clamp(3rem, 6vw, 5rem);
-    font-weight: 700;
+  color: white;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
 }
 
 .about-updated {
-    color: white;
-    opacity: 0.6;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 0.5rem;
+  color: white;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 0.5rem;
 }
 
 .about-divider {
-    width: min(90%, 1100px);
-    height: 8px;
-    background: #7F74C6;
-    margin: 0 auto 4rem;
+  width: min(90%, 1100px);
+  height: 8px;
+  background: #7f74c6;
+  margin: 0 auto 4rem;
 }
 
 /* ---------- Cards ---------- */
 
 .about-card {
-    width: min(90%, 1100px);
-    margin: 3rem auto;
-    padding: clamp(2rem, 5vw, 5rem);
+  width: min(90%, 1100px);
+  margin: 3rem auto;
+  padding: clamp(2rem, 5vw, 5rem);
 
-    background: #efeff4;
-    color: black;
-    border-radius: 2px;
+  background: #efeff4;
+  color: black;
+  border-radius: clamp(4px, 0.5vw, 10px);
+  /* border: 2px solid black; */
+  box-shadow: 10px 10px 0 black;
 
-    /* border: 2px solid black; */
-    box-shadow: 10px 10px 0 black;
-
-    transition: 0.18s ease;
+  transition: 0.18s ease;
 }
 
 .about-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 16px 16px 0 black;
+  transform: translateY(-6px);
+  box-shadow: 16px 16px 0 black;
 }
 
 /* ---------- Section Number ---------- */
 
 .section-number {
-    opacity: 0.35;
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-    margin-bottom: 1rem;
+  opacity: 0.35;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
 }
 
 /* ---------- Markdown ---------- */
 
 .about-card h1 {
-    margin: 0 0 2rem;
-    font-size: clamp(2.5rem, 4vw, 4rem);
-    transition: 0.2s;
+  margin: 0 0 2rem;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  transition: 0.2s;
 }
 
 .about-card:hover h1 {
-    transform:scale(1.2);
+  transform: scale(1.2);
 }
 
 .about-card p {
-    text-align: left;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-    font-size: clamp(1.1rem, calc(1rem + 0.5vw), 1.6rem);
-    font-weight: 350;
+  text-align: left;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.1rem, calc(1rem + 0.5vw), 1.6rem);
+  font-weight: 350;
 }
 
 .about-card ul {
-    margin-top: 1rem;
-    padding-left: 1.5rem;
-    line-height: 1.8;
-    font-size: clamp(1.1rem, calc(1rem + 0.4vw), 1.5rem);
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+  font-size: clamp(1.1rem, calc(1rem + 0.4vw), 1.5rem);
 }
 
 .about-card li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* ---------- Mobile ---------- */
 
 @media (max-width: 800px) {
+  .about-header {
+    width: 88%;
+    margin-top: 2rem;
+  }
 
-    .about-header {
-        width: 88%;
-        margin-top: 2rem;
-    }
+  .about-heading {
+    font-size: 3rem;
+  }
 
-    .about-heading {
-        font-size: 3rem;
-    }
+  .about-divider {
+    width: 88%;
+    margin-bottom: 2rem;
+  }
 
-    .about-divider {
-        width: 88%;
-        margin-bottom: 2rem;
-    }
+  .about-card {
+    width: 88%;
+    margin: 2rem auto;
+    padding: 2rem 1.5rem;
 
-    .about-card {
-        width: 88%;
-        margin: 2rem auto;
-        padding: 2rem 1.5rem;
+    box-shadow: 6px 6px 0 black;
+  }
 
-        box-shadow: 6px 6px 0 black;
-    }
+  .about-card:hover {
+    transform: none;
+    box-shadow: 6px 6px 0 black;
+  }
 
-    .about-card:hover {
-        transform: none;
-        box-shadow: 6px 6px 0 black;
-    }
+  .about-card h1 {
+    font-size: 2rem;
+  }
 
-    .about-card h1 {
-        font-size: 2rem;
-    }
-
-    .about-card p,
-    .about-card ul {
-        font-size: 1.1rem;
-        line-height: 1.75;
-    }
-
+  .about-card p,
+  .about-card ul {
+    font-size: 1.1rem;
+    line-height: 1.75;
+  }
 }

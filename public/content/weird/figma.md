@@ -2,7 +2,7 @@
 title: Figma Studies
 subtitle: Marble Era
 preview: Using stock marble and random shapes to tell a story.
-cover: bad-photos.png
+cover: figma-cover.png
 order: 3
 ---
 

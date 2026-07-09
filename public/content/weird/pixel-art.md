@@ -2,7 +2,7 @@
 title: Pixel Art
 subtitle: Cell By Cell
 preview: Google Sheets wasn't meant for this.
-cover: bad-photos.png
+cover: pixel-art-cover.png
 order: 1
 ---
 

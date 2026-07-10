@@ -12,7 +12,7 @@
   max-width: 1050px;
   margin: 0 auto;
   padding: 100px 90px 80px;
-  background: #f4eee5;
+  background: #fdf9f3;
   color: #222;
   /* border: 2px solid black; */
   border-radius: clamp(4px, 0.5vw, 10px);
@@ -33,7 +33,7 @@
   font-size: 3.5rem;
   line-height: 1.1;
   margin-bottom: 0.75rem;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--accent);
 }
 
@@ -51,6 +51,7 @@
   font-size: 2.2rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
+  font-weight: 375;
 
   border-bottom: 2px solid var(--accent);
 
@@ -67,8 +68,9 @@
 
 .content-page p {
   margin-bottom: 1.5rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 350;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
 }
 
 .content-page ul,

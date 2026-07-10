@@ -40,14 +40,13 @@ function GalleryProvider({ children }) {
   //-----------------------------------------
   // Navigation
   //-----------------------------------------
-
-  const nextImage = () => {
+  const nextImage = useCallback(() => {
     setCurrentIndex((i) => (i + 1) % images.length);
-  };
+  }, [images.length]);
 
-  const previousImage = () => {
+  const previousImage = useCallback(() => {
     setCurrentIndex((i) => (i - 1 + images.length) % images.length);
-  };
+  }, [images.length]);
 
   //-----------------------------------------
   // Keyboard
@@ -78,8 +77,7 @@ function GalleryProvider({ children }) {
     window.addEventListener("keydown", handleKey);
 
     return () => window.removeEventListener("keydown", handleKey);
-  }, [isOpen, images]);
-
+  }, [isOpen, nextImage, previousImage]);
   //-----------------------------------------
 
   return (

@@ -11,9 +11,6 @@ import Footer from "../footer/Footer";
 import parseFrontmatter from "../utils/parseFrontmatter";
 import PageHeader from "../utils/PageHeader";
 
-
-
-
 import "./Project.css";
 import { Link } from "react-router-dom";
 
@@ -33,7 +30,7 @@ function ProjectItem({ item }) {
         </div>
         <div className="projects-image-wrapper">
           <img
-            src={`/content/images/${item.image}`}
+            src={`/content/projects/${item.slug}/${item.image}`}
             alt={item.title}
             className="project-image"
           />
@@ -69,7 +66,7 @@ function Project() {
 
       const projects = await Promise.all(
         slugs.map(async (slug) => {
-          const response = await fetch(`/content/projects/${slug}.md`);
+          const response = await fetch(`/content/projects/${slug}/${slug}.md`);
 
           const text = await response.text();
 

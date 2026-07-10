@@ -10,13 +10,13 @@ This is a few Figma-based artworks that I created, I am still uncertain what the
 
 These are three artworks I created with a symmetric theme in mind.
 
-![](/content/images/weird/figma/artworks.png)
+![](/content/weird/figma/artworks.png)
 
 
 This is a continuous story of sorts that I tried to develop.
 
-![](/content/images/weird/figma/1.png)
-![](/content/images/weird/figma/2.png)
-![](/content/images/weird/figma/3.png)
-![](/content/images/weird/figma/4.png)
+![](/content/weird/figma/1.png)
+![](/content/weird/figma/2.png)
+![](/content/weird/figma/3.png)
+![](/content/weird/figma/4.png)
 

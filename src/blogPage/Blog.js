@@ -24,7 +24,7 @@ const BlogItem = (props) => {
       <div className="blog-item">
         <div className="blog-image-wrapper">
           <img
-            src={`/content/images/${image}`}
+            src={`/content/posts/${slug}/${image}`}
             alt={title}
             className="blog-image"
           />
@@ -47,7 +47,7 @@ const Blog = () => {
   useEffect(() => {
     Promise.all(
       slugs.map(async (slug) => {
-        const response = await fetch(`/content/posts/${slug}.md`);
+        const response = await fetch(`/content/posts/${slug}/${slug}.md`);
         const text = await response.text();
 
         const parsed = parseFrontmatter(text);

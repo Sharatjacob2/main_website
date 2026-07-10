@@ -20,7 +20,7 @@ function WeirdPost() {
   }, [slug]);
 
   useEffect(() => {
-    fetch(`/content/weird/${slug}.md`)
+    fetch(`/content/weird/${slug}/${slug}.md`)
       .then((res) => res.text())
       .then((text) => {
         const parsed = parseFrontmatter(text);
@@ -36,7 +36,7 @@ function WeirdPost() {
         <div
           className="weirds-bg"
           style={{
-            backgroundImage: `url(/content/images/${metadata.cover})`,
+            backgroundImage: `url(/content/weird/${slug}/${metadata.cover})`,
           }}
         />
         <div className="weirds-overlay" />
@@ -46,7 +46,7 @@ function WeirdPost() {
         <div className="content-page weird-content-page">
           <div className="weirds-hero">
             <img
-              src={`/content/images/${metadata.cover}`}
+              src={`/content/weird/${slug}/${metadata.cover}`}
               alt={metadata.title}
               className="weirds-cover"
             />

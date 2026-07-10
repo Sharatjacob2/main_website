@@ -17,7 +17,7 @@ function ProjectPage() {
   }, [slug]);
 
   useEffect(() => {
-    fetch(`/content/projects/${slug}.md`)
+    fetch(`/content/projects/${slug}/${slug}.md`)
       .then((res) => res.text())
       .then((text) => {
         const parsed = parseFrontmatter(text);

@@ -16,7 +16,7 @@ import "./Weird.css";
 
 const slugs = [
   "pixel-art",
-  "p5-experiments",
+  "p5",
   "figma",
 ];
 
@@ -32,7 +32,7 @@ const WeirdCard = ({ item }) => {
 
         <div className="weird-image-wrapper">
           <img
-            src={`/content/images/${cover}`}
+            src={`/content/weird/${slug}/${cover}`}
             alt={title}
             className="weird-image"
           />
@@ -72,7 +72,7 @@ const Weird = () => {
     Promise.all(
       slugs.map(async (slug) => {
         const response = await fetch(
-          `/content/weird/${slug}.md`
+          `/content/weird/${slug}/${slug}.md`
         );
 
         const text = await response.text();

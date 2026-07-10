@@ -240,7 +240,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-
+  position: relative;
+  z-index: 2;
   margin: 0 auto 1.5rem;
   max-width: 1050px;
   width: 100%;
@@ -259,4 +260,10 @@
 .back-button:hover {
   opacity: 0.75;
   transform: translateX(-4px);
+}
+
+@media (max-width: 768px){
+    .back-button{
+        display: none;
+    }
 }

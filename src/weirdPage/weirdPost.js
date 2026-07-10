@@ -6,6 +6,8 @@ import parseFrontmatter from "../utils/parseFrontmatter";
 import Footer from "../footer/Footer";
 import "../utils/ContentPage.css";
 import { Link } from "react-router-dom";
+import GalleryProvider from "../Gallery/GalleryProvider";
+import Figure from "../Gallery/Figure";
 
 function WeirdPost() {
   const { slug } = useParams();
@@ -28,7 +30,8 @@ function WeirdPost() {
   }, [slug]);
 
   return (
-    <>
+    <GalleryProvider>
+      {" "}
       <div className="weirds-post-wrapper content-page-wrapper">
         <div
           className="weirds-bg"
@@ -58,13 +61,18 @@ function WeirdPost() {
 
               <div className="content-subtitle">{metadata.subtitle}</div>
             </div>
-
-            <ReactMarkdown>{content}</ReactMarkdown>
+            <ReactMarkdown
+              components={{
+                img: ({ src, alt }) => <Figure src={src} alt={alt} />,
+              }}
+            >
+              {content}
+            </ReactMarkdown>{" "}
           </div>
         </div>
       </div>
       <Footer color={"#6aa28f"} />
-    </>
+    </GalleryProvider>
   );
 }
 

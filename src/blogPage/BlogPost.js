@@ -5,7 +5,7 @@ import "./BlogPost.css";
 import "../utils/ContentPage.css";
 import parseFrontmatter from "../utils/parseFrontmatter";
 import Footer from "../footer/Footer";
-
+import { Link } from "react-router-dom";
 function BlogPost() {
   const { slug } = useParams();
 
@@ -17,7 +17,7 @@ function BlogPost() {
   }, [slug]);
 
   useEffect(() => {
-    fetch(`/content/posts/${slug}.md`)
+    fetch(`/content/posts/${slug}/${slug}.md`)
       .then((res) => res.text())
       .then((text) => {
         const parsed = parseFrontmatter(text);
@@ -29,6 +29,9 @@ function BlogPost() {
   return (
     <>
       <div className="blog-post-wrapper content-page-wrapper">
+        <Link to="/blog" className="back-button">
+          ← Back to Blog
+        </Link>
         <div className="content-page">
           <div className="content-header">
             <h1 className="content-title">{metadata.title}</h1>

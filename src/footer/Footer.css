@@ -1,97 +1,96 @@
 .footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3vh 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh 0;
 }
 
 .footer-status {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    opacity: 0.6;
-    margin-top: 1.5rem;
+  opacity: 0.6;
+  margin-top: 1.5rem;
 
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-signature {
-    font-size: 1rem;
+  font-size: 1rem;
 
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 
-    text-align: center;
+  text-align: center;
 }
 
 .footer-icons {
-    display: flex;
+  display: flex;
 
-    gap: 1vw;
+  gap: 1vw;
 
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .footer-credit {
-    font-size: 0.85rem;
+  font-size: 0.85rem;
 
-    opacity: 0.6;
+  opacity: 0.6;
 
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 
 .footer-card {
-    width: 5vw;
-    height: 5vw;
+  width: 5vw;
+  height: 5vw;
 
-    min-width: 55px;
-    min-height: 55px;
+  min-width: 55px;
+  min-height: 55px;
 
-    /* background: white; */
-    background-color: rgba(0, 0, 0, 0.096);
-    border-radius: 2px;
+  /* background: white; */
+  background-color: rgba(0, 0, 0, 0.096);
+  border-radius: clamp(4px, 0.5vw, 10px);
+  border: none;
 
-    border: none;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
 
-    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-decoration: none;
 
-    text-decoration: none;
+  transition: 0.15s ease;
 
-    transition: 0.15s ease;
-
-    transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .footer-card:hover {
-    transform: translate(-5px, -5px);
+  transform: translate(-5px, -5px);
 
-    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.731);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.731);
 }
 
 .footericons {
-    width: 60%;
-    height: 60%;
+  width: 60%;
+  height: 60%;
 
-    fill: currentColor;
+  fill: currentColor;
 
-    color: black;
+  color: black;
 }
 
 @media (max-width: 800px) {
-    .footer {
-        gap: 3vw;
-        padding: 3vh 0;
-    }
+  .footer {
+    gap: 3vw;
+    padding: 3vh 0;
+  }
 
-    .footer-card {
-        width: 60px;
-        height: 60px;
-    }
+  .footer-card {
+    width: 60px;
+    height: 60px;
+  }
 }

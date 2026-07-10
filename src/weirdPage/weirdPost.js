@@ -5,6 +5,9 @@ import "./weirdPost.css";
 import parseFrontmatter from "../utils/parseFrontmatter";
 import Footer from "../footer/Footer";
 import "../utils/ContentPage.css";
+import { Link } from "react-router-dom";
+import GalleryProvider from "../Gallery/GalleryProvider";
+import Figure from "../Gallery/Figure";
 
 function WeirdPost() {
   const { slug } = useParams();
@@ -17,7 +20,7 @@ function WeirdPost() {
   }, [slug]);
 
   useEffect(() => {
-    fetch(`/content/weird/${slug}.md`)
+    fetch(`/content/weird/${slug}/${slug}.md`)
       .then((res) => res.text())
       .then((text) => {
         const parsed = parseFrontmatter(text);
@@ -27,12 +30,23 @@ function WeirdPost() {
   }, [slug]);
 
   return (
-    <>
+    <GalleryProvider>
+      {" "}
       <div className="weirds-post-wrapper content-page-wrapper">
+        <div
+          className="weirds-bg"
+          style={{
+            backgroundImage: `url(/content/weird/${slug}/${metadata.cover})`,
+          }}
+        />
+        <div className="weirds-overlay" />
+        <Link to="/weird" className="back-button">
+          ← Back to Weird
+        </Link>
         <div className="content-page weird-content-page">
           <div className="weirds-hero">
             <img
-              src={`/content/images/${metadata.cover}`}
+              src={`/content/weird/${slug}/${metadata.cover}`}
               alt={metadata.title}
               className="weirds-cover"
             />
@@ -47,13 +61,18 @@ function WeirdPost() {
 
               <div className="content-subtitle">{metadata.subtitle}</div>
             </div>
-
-            <ReactMarkdown>{content}</ReactMarkdown>
+            <ReactMarkdown
+              components={{
+                img: ({ src, alt }) => <Figure src={src} alt={alt} />,
+              }}
+            >
+              {content}
+            </ReactMarkdown>{" "}
           </div>
         </div>
       </div>
       <Footer color={"#6aa28f"} />
-    </>
+    </GalleryProvider>
   );
 }
 

@@ -5,6 +5,9 @@ import "./ProjectPage.css";
 import "../utils/ContentPage.css";
 import Footer from "../footer/Footer";
 import parseFrontmatter from "../utils/parseFrontmatter";
+import { Link } from "react-router-dom";
+import GalleryProvider from "../Gallery/GalleryProvider";
+import Figure from "../Gallery/Figure";
 
 function ProjectPage() {
   const { slug } = useParams();
@@ -17,7 +20,7 @@ function ProjectPage() {
   }, [slug]);
 
   useEffect(() => {
-    fetch(`/content/projects/${slug}.md`)
+    fetch(`/content/projects/${slug}/${slug}.md`)
       .then((res) => res.text())
       .then((text) => {
         const parsed = parseFrontmatter(text);
@@ -27,8 +30,11 @@ function ProjectPage() {
   }, [slug]);
 
   return (
-    <>
+    <GalleryProvider>
       <div className="project-post-wrapper content-page-wrapper">
+        <Link to="/projects" className="back-button">
+          ← Back to Projects
+        </Link>
         <div className="content-page">
           <div className="content-header">
             <h1 className="content-title">{metadata.title}</h1>
@@ -44,12 +50,22 @@ function ProjectPage() {
               {metadata.link}
             </a>
           </div>
-
-          <ReactMarkdown>{content}</ReactMarkdown>
+          <ReactMarkdown
+            components={{
+              img: ({ src, alt }) => <Figure src={src} alt={alt} />,
+              a: ({ href, children }) => (
+                <Link to={href} className="content-link">
+                  {children}
+                </Link>
+              ),
+            }}
+          >
+            {content}
+          </ReactMarkdown>{" "}
         </div>
       </div>
       <Footer color={"#a2756a"} />
-    </>
+    </GalleryProvider>
   );
 }
 

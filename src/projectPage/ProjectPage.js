@@ -6,6 +6,9 @@ import "../utils/ContentPage.css";
 import Footer from "../footer/Footer";
 import parseFrontmatter from "../utils/parseFrontmatter";
 import { Link } from "react-router-dom";
+import GalleryProvider from "../Gallery/GalleryProvider";
+import Figure from "../Gallery/Figure";
+
 function ProjectPage() {
   const { slug } = useParams();
 
@@ -27,7 +30,7 @@ function ProjectPage() {
   }, [slug]);
 
   return (
-    <>
+    <GalleryProvider>
       <div className="project-post-wrapper content-page-wrapper">
         <Link to="/projects" className="back-button">
           ← Back to Projects
@@ -47,12 +50,22 @@ function ProjectPage() {
               {metadata.link}
             </a>
           </div>
-
-          <ReactMarkdown>{content}</ReactMarkdown>
+          <ReactMarkdown
+            components={{
+              img: ({ src, alt }) => <Figure src={src} alt={alt} />,
+              a: ({ href, children }) => (
+                <Link to={href} className="content-link">
+                  {children}
+                </Link>
+              ),
+            }}
+          >
+            {content}
+          </ReactMarkdown>{" "}
         </div>
       </div>
       <Footer color={"#a2756a"} />
-    </>
+    </GalleryProvider>
   );
 }
 

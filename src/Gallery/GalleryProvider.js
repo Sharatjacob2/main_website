@@ -92,27 +92,45 @@ function GalleryProvider({ children }) {
       {isOpen && (
         <div className="gallery-overlay" onClick={closeGallery}>
           <div className="gallery-modal" onClick={(e) => e.stopPropagation()}>
-            <img
-              src={images[currentIndex].src}
-              alt=""
-              className="gallery-image"
-            />
+            <button
+              className="gallery-close"
+              onClick={closeGallery}
+              aria-label="Close gallery"
+            >
+              ✕
+            </button>
+            <div className="gallery-image-container">
+              <button
+                className="gallery-arrow gallery-arrow-left"
+                onClick={previousImage}
+              >
+                &#8249;
+              </button>
 
+              <img
+                src={images[currentIndex].src}
+                alt=""
+                className="gallery-image"
+              />
+
+              <button
+                className="gallery-arrow gallery-arrow-right"
+                onClick={nextImage}
+              >
+                &#8250;
+              </button>
+            </div>
             <div className="gallery-footer">
               <div className="gallery-caption">
                 {images[currentIndex].caption}
               </div>
 
               <div className="gallery-controls">
-                <button onClick={previousImage}>← Previous</button>
-
                 <div>
                   {currentIndex + 1}
                   {" / "}
                   {images.length}
                 </div>
-
-                <button onClick={nextImage}>Next →</button>
               </div>
             </div>
           </div>

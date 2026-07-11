@@ -25,7 +25,7 @@ function ProjectItem({ item }) {
           <div className="project-desc">{item.description}</div>
 
     <Link to={`/projects/${item.slug}`} className="project-link">
-            Read More →
+            Read More ↗
     </Link>
         </div>
         <div className="projects-image-wrapper">

@@ -35,6 +35,7 @@
 .gallery-image-container{
 
     position:relative;
+    align-self: center;
 
     width:100%;
 
@@ -50,7 +51,6 @@
 }
 
 .gallery-image{
-
     max-width:100%;
 
     max-height:100%;
@@ -157,12 +157,12 @@
 
 .gallery-arrow-left{
 
-    left:24px;
+    left:12px;
 }
 
 .gallery-arrow-right{
 
-    right:24px;
+    right:12px;
 }
 @media(max-width:768px){
 
@@ -225,13 +225,14 @@
 .gallery-figure{
 
     margin:3rem 0;
+    text-align: center;
 
 }
 
 .gallery-inline-image{
 
-    width:100%;
-
+    max-width:100%;
+    width:auto;
     display:block;
 
     border-radius:12px;
@@ -241,7 +242,8 @@
     transition:
         transform .35s ease,
         filter .35s ease;
-
+    margin:0 auto;
+    border: 2px solid antiquewhite;
 }
 
 .gallery-inline-image:hover{

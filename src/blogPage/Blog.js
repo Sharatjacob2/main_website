@@ -12,7 +12,7 @@ import PageHeader from "../utils/PageHeader";
 
 const slugs = [
   "lethality-human-feedback",
-  "bad-photos",
+  "psychodatanalysis",
   "cult-potential",
 ];
 
@@ -20,6 +20,7 @@ const BlogItem = (props) => {
   const { slug, title, preview, date, readingTime, image } = props.item;
   console.log(props.item);
   return (
+    
     <Link to={`/blog/${slug}`} className="blog-card-link">
       <div className="blog-item">
         <div className="blog-image-wrapper">

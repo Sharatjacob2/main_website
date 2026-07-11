@@ -6,6 +6,9 @@ import "../utils/ContentPage.css";
 import parseFrontmatter from "../utils/parseFrontmatter";
 import Footer from "../footer/Footer";
 import { Link } from "react-router-dom";
+import GalleryProvider from "../Gallery/GalleryProvider";
+import Figure from "../Gallery/Figure";
+
 function BlogPost() {
   const { slug } = useParams();
 
@@ -27,7 +30,7 @@ function BlogPost() {
   }, [slug]);
 
   return (
-    <>
+    <GalleryProvider>
       <div className="blog-post-wrapper content-page-wrapper">
         <Link to="/blog" className="back-button">
           ← Back to Blog
@@ -43,11 +46,16 @@ function BlogPost() {
             </div>
           </div>
 
-          <ReactMarkdown>{content}</ReactMarkdown>
-        </div>
+            <ReactMarkdown
+              components={{
+                img: ({ src, alt }) => <Figure src={src} alt={alt} />,
+              }}
+            >
+              {content}
+            </ReactMarkdown>        </div>
       </div>
       <Footer color={"#8ba26a"} />
-    </>
+    </GalleryProvider>
   );
 }
 

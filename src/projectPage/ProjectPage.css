@@ -12,3 +12,7 @@
 
     --link-bg:rgb(164, 36, 36);
 }
+
+.project-image{
+    border: 2px solid black;
+}

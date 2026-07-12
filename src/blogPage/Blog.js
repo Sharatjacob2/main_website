@@ -11,7 +11,7 @@ import PageHeader from "../utils/PageHeader";
 
 
 const slugs = [
-  "lethality-human-feedback",
+  "art_vs_artist",
   "psychodatanalysis",
   "cult-potential",
 ];

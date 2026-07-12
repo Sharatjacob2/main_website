@@ -51,7 +51,7 @@ a {
   font-size: 1rem;
   margin-bottom: 2rem;
   line-height: 1.5;
-  max-height: 6em; /* 4 lines × 1.5 line-height */
+  max-height: 10.5em; /* 4 lines × 1.5 line-height */
   overflow: hidden;
   color: #444;
   font-family: 'EB Garamond', Georgia;

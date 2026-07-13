@@ -15,12 +15,6 @@ import parseFrontmatter from "../utils/parseFrontmatter";
 import BlogItem from "./BlogItem";
 import TagFilter from "./TagFilter";
 
-const slugs = [
-  "art_vs_artist",
-  "psychodatanalysis",
-  "cult-potential",
-];
-
 function Blog() {
   document.body.classList.remove("hide-scrollbars");
 
@@ -33,29 +27,40 @@ function Blog() {
   //-----------------------------------------
 
   useEffect(() => {
-    Promise.all(
-      slugs.map(async (slug) => {
-        const response = await fetch(
-          `/content/posts/${slug}/${slug}.md`
-        );
-
-        const text = await response.text();
-
-        const parsed = parseFrontmatter(text);
-
-        return {
-          slug,
-          ...parsed.metadata,
-        };
-      })
-    ).then((items) => {
-      items.sort(
-        (a, b) =>
-          new Date(b.date) - new Date(a.date)
+    async function loadPosts() {
+      const slugs = await fetch("/content/posts/posts.json").then((r) =>
+        r.json(),
       );
 
+      const items = await Promise.all(
+        slugs.map(async (slug) => {
+          const response = await fetch(`/content/posts/${slug}/${slug}.md`);
+
+          const text = await response.text();
+
+          const parsed = parseFrontmatter(text);
+
+          return {
+            slug,
+            ...parsed.metadata,
+          };
+        }),
+      );
+      console.log(
+        items.map((item) => ({
+          title: item.title,
+          date: item.date,
+          tags: item.tags,
+        })),
+      );
+      items.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      console.log(items.map((p) => p.date));
+
       setBlogItems(items);
-    });
+    }
+
+    loadPosts();
   }, []);
 
   //-----------------------------------------
@@ -63,9 +68,7 @@ function Blog() {
   //-----------------------------------------
 
   const allTags = useMemo(() => {
-    return [...new Set(
-      blogItems.flatMap(post => post.tags || [])
-    )].sort();
+    return [...new Set(blogItems.flatMap((post) => post.tags || []))].sort();
   }, [blogItems]);
 
   //-----------------------------------------
@@ -73,16 +76,11 @@ function Blog() {
   //-----------------------------------------
 
   const visibleBlogs = useMemo(() => {
+    if (selectedTags.length === 0) return blogItems;
 
-    if (selectedTags.length === 0)
-      return blogItems;
-
-    return blogItems.filter(post =>
-      selectedTags.every(tag =>
-        (post.tags || []).includes(tag)
-      )
+    return blogItems.filter((post) =>
+      selectedTags.every((tag) => (post.tags || []).includes(tag)),
     );
-
   }, [blogItems, selectedTags]);
 
   //-----------------------------------------
@@ -90,16 +88,11 @@ function Blog() {
   //-----------------------------------------
 
   function toggleTag(tag) {
-
-    setSelectedTags(prev => {
-
-      if (prev.includes(tag))
-        return prev.filter(t => t !== tag);
+    setSelectedTags((prev) => {
+      if (prev.includes(tag)) return prev.filter((t) => t !== tag);
 
       return [...prev, tag];
-
     });
-
   }
 
   //-----------------------------------------
@@ -118,11 +111,7 @@ function Blog() {
   //-----------------------------------------
 
   return (
-    <div
-      className="Blog-Page"
-      style={{ backgroundColor: "#9dae4d" }}
-    >
-
+    <div className="Blog-Page" style={{ backgroundColor: "#9dae4d" }}>
       <TitleEffect title={title} />
 
       <PageHeader
@@ -141,18 +130,12 @@ function Blog() {
       />
 
       <div className="blog-grid">
-
-        {visibleBlogs.map(post => (
-          <BlogItem
-            key={post.slug}
-            item={post}
-          />
+        {visibleBlogs.map((post) => (
+          <BlogItem key={post.slug} item={post} />
         ))}
-
       </div>
 
       <Footer color="#8ba26a" />
-
     </div>
   );
 }

@@ -1,7 +1,7 @@
 ---
 title: "The Immense Potential for Cult"
 preview: "Harvard psychologist Ellen Langer will provide us with the best transition to the reality distortion field, with her acclaimed study on line-cutting. Langer conducted a study on what reasons will people accept to let someone else cut a queue and tested it out with three different reasons."
-date: "2nd JUL 2026" 
+date: 2026-06-02
 author: Sharat Jacob Jacob
 image: cult-potential.png
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Should Art Pay the Price for its Artists?"
 preview: "Art outlives artists. Fascinating works of creation evolve and grow, often to absorb meaning that even their creator may have been unable to comprehend. A true work of art ages flawlessly and flies beyond through time to touch the spirits of those who witness it centuries later. Must then art be caged because it was made by flawed hands?"
-date: "14th MAY 2024" 
+date: 2024-05-14
 author: Sharat Jacob Jacob
 image: art_vs_artist.png
 tags:

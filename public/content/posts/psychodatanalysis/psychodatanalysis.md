@@ -1,7 +1,7 @@
 ---
 title: "The Ungrounded Psycho-Data-Analysis of Sharat, by Movies: 2025"
 preview: "Join me as we perform extraordinary analysis on an ordinary mind, with the lack of the much needed expertise of a psychologist. (No helpful insights were unearthed.)"
-date: 2026-01-13
+date: 13 January 2026
 author: Sharat Jacob Jacob
 image: psychodatanalysis.png
 tags:

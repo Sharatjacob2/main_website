@@ -78,8 +78,8 @@
 }
 
 .project-desc {
-  font-size: clamp(1.1rem, 1.1vw, 1.45rem);
-  font-family: "EB Garamond", Georgia;
+  font-size: clamp(1.3rem, 1.1vw, 1.45rem);
+  font-family: "EB Garamond", Georgia, serif;
 
   font-weight: 300;
 

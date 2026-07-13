@@ -14,24 +14,56 @@ export default function parseFrontmatter(text) {
 
     const metadata = {};
 
-    match[1]
-        .split(/\r?\n/)
-        .forEach(line => {
-            const [key, ...value] = line.split(":");
+    const lines = match[1].split(/\r?\n/);
 
-            metadata[key.trim()] =
-                value.join(":")
-                     .trim()
-                     .replace(/^"(.*)"$/, "$1")
-                     .replace(/^'(.*)'$/, "$1");
-        });
+    let currentKey = null;
+
+    lines.forEach((line) => {
+
+        // Array item
+        if (/^\s*-\s+/.test(line) && currentKey) {
+
+            metadata[currentKey].push(
+                line.replace(/^\s*-\s+/, "").trim()
+            );
+
+            return;
+        }
+
+        const split = line.split(":");
+
+        const key = split.shift()?.trim();
+
+        const value = split.join(":").trim();
+
+        if (!key) return;
+
+        // Start of array
+        if (value === "") {
+
+            metadata[key] = [];
+
+            currentKey = key;
+
+            return;
+        }
+
+        metadata[key] = value
+            .replace(/^"(.*)"$/, "$1")
+            .replace(/^'(.*)'$/, "$1");
+
+        currentKey = null;
+
+    });
 
     const content = match[2].trim();
 
     const words = content.split(/\s+/).length;
 
-    metadata.readingTime =
-        Math.max(1, Math.ceil(words / 200));
+    metadata.readingTime = Math.max(
+        1,
+        Math.ceil(words / 200)
+    );
 
     return {
         metadata,

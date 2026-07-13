@@ -14,7 +14,7 @@
 
   /* border: 2px solid black; */
   box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.368);
-border-radius: clamp(4px, 0.5vw, 10px);
+  border-radius: clamp(4px, 0.5vw, 10px);
   transition: 0.2s ease;
 
   color: black;
@@ -41,9 +41,8 @@ a {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   color: #6d7b2e;
+  font-weight: 450;
 }
-
-
 
 .blog-preview {
   flex: 1;
@@ -54,7 +53,7 @@ a {
   max-height: 10.5em; /* 4 lines × 1.5 line-height */
   overflow: hidden;
   color: #444;
-  font-family: 'EB Garamond', Georgia;
+  font-family: "EB Garamond", Georgia;
 }
 
 .blog-main-title {
@@ -135,4 +134,129 @@ a {
 .blog-item:hover .blog-image {
   transform: scale(1.08);
   filter: grayscale(0%) sepia(0%) hue-rotate(0deg) saturate(100%);
+}
+
+/* ---------- Tags ---------- */
+
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog-tag {
+  padding: 0.3rem 0.8rem;
+
+  background: #dce6b0;
+
+  color: #5d6827;
+
+  border-radius: 999px;
+
+  font-size: 0.78rem;
+
+  font-weight: 500;
+
+  letter-spacing: 0.3px;
+
+  transition: 0.2s ease;
+}
+
+.blog-item:hover .blog-tag {
+  background: #c8d88d;
+}
+
+/* ---------- Tag Filter ---------- */
+
+.tag-filter {
+  width: 85%;
+
+  margin: 3rem auto 2rem;
+  align-items: center;
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
+.tag-filter-title {
+  color: white;
+
+  font-size: 1rem;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  opacity: 0.75;
+}
+
+.tag-filter-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.75rem;
+}
+
+.tag-filter-chip {
+  border: none;
+
+  border-radius: 999px;
+
+  padding: 0.55rem 1rem;
+
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  color: white;
+
+  font-size: 0.95rem;
+
+  transition: 0.18s ease;
+
+  backdrop-filter: blur(8px);
+}
+
+.tag-filter-chip:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.tag-filter-chip.active {
+  background: white;
+
+  color: #6d7b2e;
+
+  font-weight: 600;
+}
+
+.tag-filter-clear {
+  width: fit-content;
+
+  border: none;
+
+  background: none;
+
+  color: white;
+
+  opacity: 0.75;
+
+  cursor: pointer;
+
+  font-size: 0.95rem;
+
+  padding: 0;
+
+  transition: 0.18s;
+}
+
+.tag-filter-clear:hover {
+  opacity: 1;
+
+  transform: translateX(4px);
 }

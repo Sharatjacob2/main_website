@@ -1,10 +1,12 @@
 ---
 title: "The Immense Potential for Cult"
-preview: "Harvard psychologist Ellen Langer will provide us with the best transition to the reality distortion field, with her acclaimed study on line-cutting. Langer once conducted a study on what reasons will people accept to let someone else cut a queue and tested it out with three different reasons: "
+preview: "Harvard psychologist Ellen Langer will provide us with the best transition to the reality distortion field, with her acclaimed study on line-cutting. Langer conducted a study on what reasons will people accept to let someone else cut a queue and tested it out with three different reasons."
 date: "2nd JUL 2026" 
 author: Sharat Jacob Jacob
 image: cult-potential.png
-
+tags:
+  - Philosophy
+  - Ethics
 ---
 
 My cousin testified yesterday that the first time I spoke to her about AI Safety, I did so for three hours, outlining lore, problems, work, personal stories, and she was hooked and spellbound the whole time. 

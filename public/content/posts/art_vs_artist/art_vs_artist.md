@@ -4,10 +4,12 @@ preview: "Art outlives artists. Fascinating works of creation evolve and grow, o
 date: "14th MAY 2024" 
 author: Sharat Jacob Jacob
 image: art_vs_artist.png
+tags:
+  - Philosophy
+  - Art
+  - Ethics
 ---
 
-
-![Photo by Mathilda Khoo on Unsplash](https://miro.medium.com/v2/resize:fit:945/0*RuspgmbBQwrPqoW9)
 
 Van Gogh was depressed and alone.
 

@@ -4,7 +4,9 @@ preview: "Join me as we perform extraordinary analysis on an ordinary mind, with
 date: "26th JAN 2026" 
 author: Sharat Jacob Jacob
 image: psychodatanalysis.png
-
+tags:
+  - Datascience
+  - Cinema
 ---
 
 

@@ -108,7 +108,7 @@ const Weird = () => {
       <TitleEffect title={title} />
       <PageHeader
         title="EXHIBITIONS"
-        subtitle="Stuff I Made to Mess Around"
+        subtitle="Stuff I Made to Mess Around."
         accentColor="#74c6b0"
       />
 

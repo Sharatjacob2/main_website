@@ -83,7 +83,6 @@ a {
 }
 
 .blog-date {
-  margin-top: auto;
 
   font-size: 0.9rem;
 
@@ -143,7 +142,7 @@ a {
   flex-wrap: wrap;
   gap: 0.45rem;
 
-  margin-top: 1rem;
+  margin-top: auto;
   margin-bottom: 1rem;
 }
 

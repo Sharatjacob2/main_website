@@ -8,7 +8,7 @@ function TagFilter({
     <div className="tag-filter">
 
       <div className="tag-filter-title">
-        Filter by topic
+        FILTER BY TASTE
       </div>
 
       <div className="tag-filter-tags">

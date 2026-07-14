@@ -12,20 +12,17 @@ tags:
 
 
 
-*This moment takes place at a park.* 
+> This moment takes place at a park.
+> Freshly painted slides, brand new swings, and resplendent trees accompany a sun that fills the skies with flourishes of red, as it departs from the day.
+>
+> We are here to merely observe and listen, to see what makes us who we are and is our destination truly malleable like water or set in stone as many claim destiny to be.
+>
+> There are three small boys playing in the park. We shall call them Red, Black, and White.
+> For the moment, that is. There is no one else in the park, except for me, by design. 
+> 
+> This is an experiment?
 
-*Freshly painted slides, brand new swings, and resplendent trees accompany a sun that fills the skies with flourishes of red, as it departs from the day.* 
-
-*We are here to merely observe and listen, to see what makes us who we are and is our destination truly malleable like water or set in stone as many claim destiny to be.*
-
-*There are three small boys playing in the park.*   
-*We shall call them Red, Black, and White.*   
-*For the moment, that is.*
-
-*There is no one else in the park, except for me, by design.*  
-*This is an experiment?*
-
-***\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_***
+---
 
 “What we have here is a mission, gentlemen\!”, Black shouted, lifting a fist in honor of the mission.
 
@@ -68,7 +65,7 @@ White meekly smiled, grateful to be part of the prank.
 
 Black snorted, “Very well, chicken is included too. I wasn’t gonna leave him anyway. He’s an important part of the whole thing. So here’s how it’s gonna go…”
 
-***\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_***
+---
 
 White slowly began his walk up to the lady on the bench. He wished he could walk even slower but it was only a matter of time before he reached her. He didn’t want to reach her.
 
@@ -127,7 +124,7 @@ In the distance, Red and Black were paralyzed, the papers slowly falling out of 
 He looked back at the lady. She smiled.  
 “We haven’t properly met, have we? My name is Alicia.”
 
- ***\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_***
+---
 
 Black was extremely confused.  
 To his ten-year-old mind, this had been a foolproof plan.   
@@ -178,13 +175,14 @@ Alicia paused to catch her breath. Red seemed to be the only one who seemed to h
 
 “We shall start with you, Black.”
 
- ***\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_***
+---
 
 White and Red sat by the pond, still reeling from the whirlwind of a day they had had.   
 White sat and attempted to trace Alicia’s face in the soil, whilst Red walked about moving frozen sunbeams out of the way and trying to taste them.
 
 Black, as Alicia had commanded, was first and with her.  
- ***\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_***
+
+---
 
 **Black opened his eyes. He was lying in his bed. They felt mildly wet like he had been weeping. There had been a strange dream but he couldn’t remember it.**
 
@@ -198,22 +196,22 @@ Black, as Alicia had commanded, was first and with her.
 
 **Mother and son stayed in the hug, both refusing to let go that night.**
 
- ***\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_***
+---
 
-*Subject 1*
+> ### Subject 1
+>
+> Art Project Name: Black   
+> G-956 Name: Charlie Chaplin 
+>  
+> I showed mischievous little Charlie, the boy who had tried to prank me, the multitudes he made laugh in the decades to come in his existence, whilst he never uttered a word in his brilliant performances. I showed him his famous speech when he rallied the troops against Hitler, a speech that would echo through the minds of children when they rally against the great three dictators in World War IV in 2138\.  
+> 
+> And yet all he asked me about was his mother. He desired to know if she died at peace, if she was cured in the end. He cried when he learned his mother would die in 30 years. He wanted the world for her.  
+> 
+> He did not care to know anything more about the future but beseeched me to send him home, so that he could savor his time with his mother. 
+>   
+> And so I did.
 
-*Art Project Name: Black*    
-*G-956 Name: Charlie Chaplin*
-
-*I showed mischievous little Charlie, the boy who had tried to prank me, the multitudes he made laugh in the decades to come in his existence, whilst he never uttered a word in his brilliant performances. I showed him his famous speech when he rallied the troops against Hitler, a speech that would echo through the minds of children when they rally against the great three dictators in World War IV in 2138\.* 
-
-*And yet all he asked me about was his mother. He desired to know if she died at peace, if she was cured in the end. He cried when he learned his mother would die in 30 years. He wanted the world for her.*  
-   
-*He did not care to know anything more about the future but beseeched me to send him home, so that he could savor his time with his mother.* 
-
-*And so I did.*
-
- ***\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_***
+---
 
 White turned around and found Red nowhere in sight. It must be Red’s turn now.
 
@@ -225,7 +223,7 @@ Maybe he didn’t want to know the future.
 
 Anyway, it was Red’s turn now.
 
- ***\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_***
+---
 
 **Red woke upright in bed.**   
 **He felt a certain joy within.**
@@ -237,21 +235,21 @@ Anyway, it was Red’s turn now.
 
 **“Albert\! What are you doing out of bed?”**
 
- ***\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_***
+---
 
-*Subject 2*
+> ### Subject 2
+>
+> Art Project Name: Red   
+> G-956 Name: Albert Einstein
+>
+> Albert, the boy who sided with Charlie and stayed observant, was a fascinating human specimen to converse with. He displayed mild concern regarding his personal life in the future, the disheveled lives of his wives and his children, and seemed moderately shocked his older self would behave in such a manner.
+> His interest was piqued when I revealed his contributions towards human history, proving Newton’s statement about time incorrect, equations of general and specific relativity, and his subsequent journey towards the unified field equation.
+> 
+> Despite my insistence to not reveal more about where I come from, he argued that since I would wipe the encounter from his memory regardless, I should be able to answer furthermore of his questions. Worn down by his energy, he stayed enthralled as I described the more boring parts of my existence, how I moved by curving space-time, how matter can be distorted, the structure of black holes, and much more.
+> 
+> When I got completely tired, regardless of his repeated shouts of protest, I sent him home.
 
-*Art Project Name: Red*  
-*G-956 Name: Albert Einstein*
-
-*Albert, the boy who sided with Charlie and stayed observant, was a fascinating human specimen to converse with. He displayed mild concern regarding his personal life in the future, the disheveled lives of his wives and his children, and seemed moderately shocked his older self would behave in such a manner.*   
-*His interest was piqued when I revealed his contributions towards human history, proving Newton’s statement about time incorrect, equations of general and specific relativity, and his subsequent journey towards the unified field equation.*
-
-*Despite my insistence to not reveal more about where I come from, he argued that since I would wipe the encounter from his memory regardless, I should be able to answer furthermore of his questions. Worn down by his energy, he stayed enthralled as I described the more boring parts of my existence, how I moved by curving space-time, how matter can be distorted, the structure of black holes, and much more.*
-
-*When I got completely tired, regardless of his repeated shouts of protest, I sent him home.*
-
- ***\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_***
+---
 
 **White woke up, bawling in bed. His tears flowed endlessly as he kept crying incoherently, making no sense. He couldn’t even remember why he felt so terribly sad.**
 
@@ -261,48 +259,48 @@ Anyway, it was Red’s turn now.
 
 **White did not cry anymore after that.**
 
- ***\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_***
+---
 
-*Subject 3*
+> ### Subject 3
+>
+> **Art Project Name:**  White  
+> **G-956 Name:** Adolf Hitler
+>
+> This was by far, the most fascinating individual in the art project. Maybe I related with him a bit for his fascination with art. It’s a pity of course that he failed art and ended up joining the war. If you are like me, one wonders how one would have turned out had things been different in one’s own case. I definitely do not think I would have been a genocidal dictator.
+> 
+> I wondered if little Adolf here would have been attached and sympathetic to his family like our Charlie, in pursuit of higher aims like Albert or something else entirely?
+> 
+> He was relieved when I showed him his father would die in 3 years’ time. But as I waited, I wanted to see the reaction to the bloodshed that was his legacy.
+> 
+> In the 345 years, I have spent scouring galaxies and meeting people, I have never met anyone who cried so deeply as this boy did. He fell to his knees as I showed him all the terrible things that had occurred as a consequence of his actions. 
+> 
+> Was it inhumane to show him all of that?   
+> I am not sure.
+> 
+> Did his tears justify the oceans of tears that flowed from the victims of his action, the atrocities that he committed?   
+> No, it did not.
+> 
+> But that boy cried his heart out. It wouldn’t ever make up for the impact that the Holocaust had left upon G-956 but my heart wrenched for a second, nearly making me forget this was an art project. Adolf clung to my clothes and begged me to tell him I was lying, to tell him he could change all of this, to let him keep this memory so he could stop all of this from happening. 
+> 
+> He never stopped crying even when I finally sent him home.
+> 
+> I never thought this might break me.
 
-*Art Project Name:  White*  
-*G-956 Name: Adolf Hitler*
+---
 
-*This was by far, the most fascinating individual in the art project. Maybe I related with him a bit for his fascination with art. It’s a pity of course that he failed art and ended up joining the war. If you are like me, one wonders how one would have turned out had things been different in one’s own case. I definitely do not think I would have been a genocidal dictator.*
-
-*I wondered if little Adolf here would have been attached and sympathetic to his family like our Charlie, in pursuit of higher aims like Albert or something else entirely?*
-
-*He was relieved when I showed him his father would die in 3 years’ time. But as I waited, I wanted to see the reaction to the bloodshed that was his legacy.*
-
-*In the 345 years, I have spent scouring galaxies and meeting people, I have never met anyone who cried so deeply as this boy did. He fell to his knees as I showed him all the terrible things that had occurred as a consequence of his actions.* 
-
-*Was it inhumane to show him all of that?*   
-*I am not sure.*
-
-*Did his tears justify the oceans of tears that flowed from the victims of his action, the atrocities that he committed?*   
-*No, it did not.*
-
-*But that boy cried his heart out. It wouldn’t ever make up for the impact that the Holocaust had left upon G-956 but my heart wrenched for a second, nearly making me forget this was an art project. Adolf clung to my clothes and begged me to tell him I was lying, to tell him he could change all of this, to let him keep this memory so he could stop all of this from happening.* 
-
-*He never stopped crying even when I finally sent him home.*
-
-*I never thought this might break me.*
-
- ***\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_***
-
-*This concludes my art project and written below is the aim of the project.*
-
-*I aimed to wonder if children would be proud of their older selves and stand by them.*
-
-*Children are innocent, untouched creatures, devoid of knowledge and driven by simple morals. But can the same be said about our older selves?*
-
-*Would we be presentable to our younger selves? Would ur younger selves be driven by the same pursuits the older selves are?* 
-
-*Material wealth? Power? Fame? Family? Mysteries?*
-
-*After my art project, I am honestly still unsure.*   
-*But then what is the purpose of art but to make us doubt ourselves and our sanity?*
-
-*I do not think I will return to G-956 by choice in the near future. Humans are mere fascinations and I would like to keep it at that.* 
-
-*I conclude my submission.*
+> This concludes my art project and written below is the aim of the project.
+>
+> I aimed to wonder if children would be proud of their older selves and stand by them.
+>
+> Children are innocent, untouched creatures, devoid of knowledge and driven by simple morals. But can the same be said about our older selves?
+>
+> Would we be presentable to our younger selves? Would ur younger selves be driven by the same pursuits the older selves are?
+>
+> Material wealth? Power? Fame? Family? Mysteries?
+>
+> After my art project, I am honestly still unsure.   
+> But then what is the purpose of art but to make us doubt ourselves and our sanity?
+>
+> I do not think I will return to G-956 by choice in the near future. Humans are mere fascinations and I would like to keep it at that. 
+>
+> I conclude my submission.

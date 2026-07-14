@@ -88,7 +88,8 @@ My friends were leaving.
 
 Ninety percent of that select group of people I mentioned earlier were seniors I held dear to my heart, and they were going. This was the end of college as I knew it, despite there being one year left.
 
-Who dictated that good things needed to come to an end? Because I definitely have a fight to pick with that person.
+Who dictated that good things needed to come to an end?  
+Because I definitely have a fight to pick with that person.
 
 I sulked and frowned in _dukham,_ but what has to happen would happen.
 

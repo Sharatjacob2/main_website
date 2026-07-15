@@ -76,7 +76,6 @@ const WelcomePage = () => {
                 <Welcome className='Welcome-frontTitle' />
             </div>
             <div ref={secondElementRef} className={`main-sphere ${colorValue === 'white' ? '' : 'clicked'}`} style={{ backgroundColor: colorValue, top: `${topPosition}px` }}></div>
-                  {/* <Footer color={"#b594e9"} /> */}
 
         </div>
     );

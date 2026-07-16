@@ -1,27 +1,17 @@
 function HeroSection({ fields }) {
   return (
     <section className="resume-hero">
+      <h1 className="resume-name">{fields.name}</h1>
 
-      <h1 className="resume-name">
-        {fields.name}
-      </h1>
+      <p className="resume-headline">{fields.headline}</p>
 
-      <p className="resume-headline">
-        {fields.headline}
-      </p>
+      {/* <div className="resume-contact">
+        <span>{fields.location}</span> */}
 
-      <div className="resume-contact">
+        {/* <span>•</span>
 
-        <span>{fields.location}</span>
-
-        <span>•</span>
-
-        <a href={`mailto:${fields.email}`}>
-          {fields.email}
-        </a>
-
-      </div>
-
+        <a href={`mailto:${fields.email}`}>{fields.email}</a> */}
+      {/* </div> */}
     </section>
   );
 }

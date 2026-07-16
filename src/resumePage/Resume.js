@@ -60,7 +60,7 @@ const Resume = () => {
         <span>Download PDF ↗</span>
       </a>
       <div className="resume-meta">
-        Viewing 3 Pages • PDF • Updated July 2026
+        Viewing HTML Version • Updated July 2026
       </div>
       <div className="resume-document">
         {sections.map((section) => {

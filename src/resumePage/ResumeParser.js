@@ -5,10 +5,7 @@ export default function parseResume(text) {
 
   text = text.replace(/^\uFEFF/, "");
 
-  text = text.replace(
-    /^---[\s\S]*?---\s*/,
-    ""
-  );
+  text = text.replace(/^---[\s\S]*?---\s*/, "");
 
   const sections = [];
 
@@ -41,7 +38,6 @@ export default function parseResume(text) {
   const lines = text.split(/\r?\n/);
 
   for (const raw of lines) {
-
     const line = raw.trim();
 
     if (!line) continue;
@@ -51,7 +47,6 @@ export default function parseResume(text) {
     //------------------------------------
 
     if (line.startsWith("# ")) {
-
       pushSection();
 
       currentSection = {
@@ -59,7 +54,7 @@ export default function parseResume(text) {
         collapse: false,
         fields: {},
         bullets: [],
-        items: []
+        items: [],
       };
 
       currentList = null;
@@ -72,13 +67,12 @@ export default function parseResume(text) {
     //------------------------------------
 
     if (line.startsWith("## ")) {
-
       pushItem();
 
       currentItem = {
         title: line.slice(3),
         fields: {},
-        bullets: []
+        bullets: [],
       };
 
       currentList = null;
@@ -91,30 +85,16 @@ export default function parseResume(text) {
     //------------------------------------
 
     if (line.startsWith("- ")) {
-
       const value = line.slice(2);
 
       if (currentList) {
-
-        const target =
-          currentItem
-            ? currentItem.fields
-            : currentSection.fields;
+        const target = currentItem ? currentItem.fields : currentSection.fields;
 
         target[currentList].push(value);
-
-      }
-
-      else if (currentItem) {
-
+      } else if (currentItem) {
         currentItem.bullets.push(value);
-
-      }
-
-      else {
-
+      } else {
         currentSection.bullets.push(value);
-
       }
 
       continue;
@@ -127,33 +107,20 @@ export default function parseResume(text) {
     const colon = line.indexOf(":");
 
     if (colon !== -1) {
+      const key = line.slice(0, colon).trim();
 
-      const key =
-        line.slice(0, colon).trim();
+      const value = line.slice(colon + 1).trim();
 
-      const value =
-        line.slice(colon + 1).trim();
-
-      if (
-        key === "collapse" &&
-        currentSection &&
-        !currentItem
-      ) {
-
-        currentSection.collapse =
-          value === "true";
+      if (key === "collapse" && currentSection && !currentItem) {
+        currentSection.collapse = value === "true";
 
         continue;
       }
 
       if (value === "") {
-
         currentList = key;
 
-        const target =
-          currentItem
-            ? currentItem.fields
-            : currentSection.fields;
+        const target = currentItem ? currentItem.fields : currentSection.fields;
 
         target[key] = [];
 
@@ -162,15 +129,10 @@ export default function parseResume(text) {
 
       currentList = null;
 
-      const target =
-        currentItem
-          ? currentItem.fields
-          : currentSection.fields;
+      const target = currentItem ? currentItem.fields : currentSection.fields;
 
       target[key] = value;
-
     }
-
   }
 
   pushSection();

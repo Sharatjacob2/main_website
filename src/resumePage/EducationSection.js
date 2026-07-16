@@ -1,88 +1,33 @@
 function EducationSection({ section }) {
+  return (
+    <section className="resume-section">
+      <h2 className="resume-section-title">{section.title}</h2>
 
-    return (
+      <div className="education-timeline">
+        {section.items.map((item) => (
+          <div className="education-item" key={item.title}>
+            {/* <div className="education-marker">
+              <div className="education-dot" />
 
-        <section className="resume-section">
+              <div className="education-line" />
+            </div> */}
 
-            <h2 className="resume-section-title">
+            <div className="education-content">
+              <div className="education-date">{item.fields.date}</div>
 
-                {section.title}
+              <h3>{item.title}</h3>
 
-            </h2>
+              <p>{item.fields.degree}</p>
 
-            <div className="education-timeline">
+              {item.fields.gpa && <p>{item.fields.gpa}</p>}
 
-                {
-
-                    section.items.map(item => (
-
-                        <div
-                            className="education-item"
-                            key={item.title}
-                        >
-
-                            <div className="education-marker">
-
-                                <div className="education-dot"/>
-
-                                <div className="education-line"/>
-
-                            </div>
-
-                            <div className="education-content">
-
-                                <div className="education-date">
-
-                                    {item.fields.date}
-
-                                </div>
-
-                                <h3>
-
-                                    {item.title}
-
-                                </h3>
-
-                                <p>
-
-                                    {item.fields.degree}
-
-                                </p>
-
-                                {
-
-                                    item.fields.gpa && (
-
-                                        <p>
-
-                                            {item.fields.gpa}
-
-                                        </p>
-
-                                    )
-
-                                }
-
-                                <p>
-
-                                    {item.fields.location}
-
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    ))
-
-                }
-
+              <p>{item.fields.location}</p>
             </div>
-
-        </section>
-
-    );
-
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default EducationSection;

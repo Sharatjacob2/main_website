@@ -5,8 +5,6 @@ import EducationSection from "./EducationSection";
 import BulletSection from "./BulletSection";
 import ReferenceSection from "./ReferenceSection";
 
-
-
 function ResumeSection({ section }) {
   const accordionSections = ["Experience", "Projects", "Publications"];
 

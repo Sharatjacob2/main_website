@@ -5,9 +5,12 @@ import { ReactComponent as ResumeCentre } from "./Resume Centre Test.svg";
 
 import DownloadIcon from "./Download Icon.svg";
 
-import PageOne from "./PageOne.svg";
-import PageTwo from "./PageTwo.svg";
-import PageThree from "./PageThree.svg";
+import { useEffect, useState } from "react";
+
+import parseResume from "./ResumeParser";
+import ResumeSection from "./ResumeSection";
+
+import HeroSection from "./HeroSection";
 
 import PageHeader from "../utils/PageHeader";
 import Footer from "../footer/Footer";
@@ -16,7 +19,7 @@ import "./Resume.css";
 
 const Resume = () => {
   document.body.classList.remove("hide-scrollbars");
-
+  const [sections, setSections] = useState([]);
   const title = {
     front: ResumeF,
     back: ResumeB,
@@ -26,7 +29,17 @@ const Resume = () => {
     width: 55.313,
     height: 55.313,
   };
+  useEffect(() => {
+    fetch("/content/resume.md")
+      .then((r) => r.text())
+      .then((text) => {
+        const parsed = parseResume(text);
 
+        console.log(parsed);
+
+        setSections(parsed);
+      });
+  }, []);
   return (
     <div className="Resume-Page" style={{ backgroundColor: "#c44e2d" }}>
       <TitleEffect title={title} />
@@ -49,26 +62,14 @@ const Resume = () => {
       <div className="resume-meta">
         Viewing 3 Pages • PDF • Updated July 2026
       </div>
-      <div className="resume-stack">
+      <div className="resume-document">
+        {sections.map((section) => {
+          if (section.title === "Hero") {
+            return <HeroSection key={section.title} fields={section.fields} />;
+          }
 
-        <img
-          src={PageOne}
-          alt="Resume page 1"
-          className="resume-page"
-        />
-
-        <img
-          src={PageTwo}
-          alt="Resume page 2"
-          className="resume-page"
-        />
-
-        <img
-          src={PageThree}
-          alt="Resume page 3"
-          className="resume-page"
-        />
-
+          return <ResumeSection key={section.title} section={section} />;
+        })}
       </div>
 
       <Footer color="#e08257" />

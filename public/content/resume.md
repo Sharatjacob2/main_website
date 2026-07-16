@@ -23,6 +23,8 @@ date: Expected January 2028
 
 location: Tirupati, Andhra Pradesh
 
+image: iittlogo
+
 
 ## Govt. Model Engineering College
 
@@ -34,7 +36,10 @@ date: June 2023
 
 location: Thrikkakara, Kerala
 
-## Indian School, Bahrain
+image: meclogo
+
+
+## The Indian School, Bahrain
 
 degree: Class XII, CBSE
 
@@ -43,6 +48,9 @@ gpa: 95.2%
 date: April 2019
 
 location: Isa Town, Bahrain
+
+image: isblogo
+
 
 # Experience
 

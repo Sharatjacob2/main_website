@@ -81,7 +81,7 @@
 .accordion-card,
 .reference-card,
 .bullet-card {
-  background: #f4eee5;
+  /* background: #f4eee5; */
 }
 
 .resume-document {
@@ -323,7 +323,7 @@
   box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.22);
   padding: 1.4rem;
   border-radius: 9px;
-  width: 100%;
+  width: 80%;
 }
 
 .education-content h3 {
@@ -337,13 +337,28 @@
   font-weight: 300;
 }
 
+.education-institute-logo-wrapper {
+  width: 25%;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.22);
+  padding: 1.4rem;
+  border-radius: 9px;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-institute-logo {
+  width: 70%;
+}
 /* ---------- Bullet Card ---------- */
 
 .bullet-card {
-  background: #f9f5ef;
+  /* background: #f9f5ef; */
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.18);
+  /* box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.18); */
 }
 
 .bullet-list {
@@ -407,14 +422,10 @@
 
 /* ---------- Hero ---------- */
 
-.resume-hero {
-  /* text-align: center; */
-}
-
 .resume-name {
   font-size: clamp(3.8rem, 8vw, 5.5rem);
   font-family: "EB Garamond", serif;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: -2px;
   line-height: 0.95;
   margin-bottom: 1rem;

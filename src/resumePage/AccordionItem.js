@@ -14,16 +14,15 @@ function AccordionItem({ item }) {
               {item.fields.role || item.fields.degree}
             </p>
           )}
+          {item.fields.date && (
+            <p className="accordion-date">{item.fields.date}</p>
+          )}
         </div>
 
         <div className="accordion-arrow">{open ? "−" : "+"}</div>
       </button>
 
       <div className={`accordion-body ${open ? "open" : ""}`}>
-        {item.fields.date && (
-          <p className="accordion-date">{item.fields.date}</p>
-        )}
-
         {item.fields.location && (
           <p className="accordion-location">{item.fields.location}</p>
         )}

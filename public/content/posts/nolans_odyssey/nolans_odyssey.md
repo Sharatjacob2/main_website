@@ -5,13 +5,14 @@ date: 20 July 2026
 author: Sharat Jacob Jacob
 image: nolans_odyssey.png
 tags:
-  - Personal
-  - Nostalgia
+  - Mythology
+  - Film Review
+  - Fiction
 ---
 
 This is the day after watching The Odyssey as visualized by Christopher Nolan, and I have sensed my perspectives on the film mature and change over the last 24 hours, so I thought I would pen them down as they are.
 
-# REVIEW 
+## REVIEW 
 
 Firstly, getting it out of the way, since this review is focused on the thematic narrative, everything else about the film is brilliantly done, the colors, the lighting, the scale and awe, the presence, very Nolan-esque, and an absolute delight to consume. 10/10 on those aspects.
 
@@ -33,7 +34,7 @@ This is what I come to odds at, that thematically all this while, to me, Homer�
 
 The third act changed how I perceived it looking back, the specific subset of monsters chosen, their depictions, and the common thread that unites them; Zeus’ Law. This abstract object that sits as the large backdrop changed how I looked back on the film, how I desire to intensely to rewatch it under the new lens it presents. Now, I might even consider it a perfect film.
 
-# ANALYSIS
+## ANALYSIS
 
 Nolan’s Odyssey chronicles the beginning of a culture of dishonor and the men who start it, Odysseus, Menelaus, Agamemnon, who stand appalled as they have constructed a world they no longer fit in. These three men are highlighted as they are used by Nolan to demonstrate they now come from a different era of societal respect that no longer exists, one that they unknowingly served to destabilize through a carefully crafted massacre.
 

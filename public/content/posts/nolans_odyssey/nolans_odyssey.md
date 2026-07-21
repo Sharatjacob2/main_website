@@ -1,5 +1,5 @@
 ---
-title: "# Nolan’S Odyssey: Review & Analysis"
+title: "# Nolan’S Odyssey: Review & Analysis (Spoilers)"
 preview: "This is the day after watching The Odyssey as visualized by Christopher Nolan, and I have sensed my perspectives on the film mature and change over the last 24 hours, so I thought I would pen them down as they are."
 date: 20 July 2026
 author: Sharat Jacob Jacob
@@ -10,7 +10,7 @@ tags:
   - Fiction
 ---
 
-This is the day after watching The Odyssey as visualized by Christopher Nolan, and I have sensed my perspectives on the film mature and change over the last 24 hours, so I thought I would pen them down as they are.
+This is the day after watching The Odyssey as visualized by Christopher Nolan, and I have sensed my perspectives on the film mature and change over the last 24 hours, so I thought I would pen them down as they are. I warn all readers that there are spoilers in the paragraphs to come.
 
 ## REVIEW 
 

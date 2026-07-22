@@ -60,7 +60,13 @@ As Odysseus confronts Antinous at the banquet, taking on the form of a beggar an
 
 When the suitors fail at Penelope’s challenge, Antinous, in apparent resignation, deems the task as “impossible”, implying it cannot be achieved by a mortal. The beggar silently steps forward, claiming his turn, and Odysseus rises to the task. Once he strings the bow and completes the challenge, he re-orients the bow to those who have violated Zeus’ law and snark at it. Now, Odysseus has begun his ascension as Zeus, bringing righteous punishment.
 
-Where does lightning come from? Above. As Odysseus swings around with arrows embedded in him, beyond mortal tolerance, where do his weapons of attack come from when the bow isn’t enough? Above, the hole in the ceiling, where Telemachus delivers the swords at the pivotal moment in the fight, a Nolan-addition to the tale. Zeus thus completes his manifestation in the epic as Odysseus himself.
+Where does lightning come from? Above. 
+
+As Odysseus swings around with arrows embedded in him, beyond mortal tolerance, where do his weapons of attack come from when the bow isn’t enough? 
+
+Above, the hole in the ceiling, where Telemachus delivers the swords at the pivotal moment in the fight, a Nolan-addition to the tale. 
+
+Zeus thus completes his manifestation in the epic as Odysseus himself.
 
 This is my interpretation of Nolan’s Odyssey thus far, of Gods and Monsters, where Odysseus transforms between both. Nolan views this epic and Odysseus’ actions as an immense dismantling of a civilized peaceful society with a treacherous act. Through his epic, he seeks to illustrate that we are Polyphemus, we are Circe, we are Calypso, but if we come to a civilized understanding, we can pave the way to a sustainable culture, allowing us to rise to the nature of the divine.
 
